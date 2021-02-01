@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/Users/bernardopaulsen/Google Drive/ubuntu/projects/bernardopaulsen.github.io/website_env"
+VIRTUAL_ENV="/home/ubuntu/projects/bernardopaulsen.github.io/website_env"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
