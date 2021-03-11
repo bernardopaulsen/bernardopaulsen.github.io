@@ -87,7 +87,6 @@ span.pmatrix img{vertical-align:middle;}
 div.pmatrix {text-align:center;}
 table.pmatrix {width:100%;}
 span.bar-css {text-decoration:overline;}
-table.tabular{border-collapse: collapse; border-spacing: 0;}
 img.cdots{vertical-align:middle;}
 .partToc a, .partToc, .likepartToc a, .likepartToc {line-height: 200%; font-weight:bold; font-size:110%;}
 .index-item, .index-subitem, .index-subsubitem {display:block}
@@ -109,11 +108,5 @@ div.author{white-space: nowrap;}
 .quotation {margin-bottom:0.25em; margin-top:0.25em; margin-left:1em; }
 .abstract p {margin-left:5%; margin-right:5%;}
 div.abstract {width:100%;}
-figure.float, div.figure {margin-left: auto; margin-right: auto;}
-figure.float img {text-align:center;}
-figure.figure img {text-align:center;}
-figure.figure > p {text-align:center;}
-figcaption.caption {text-indent:-2em; margin-left:3em; margin-right:1em; text-align:center;}
-figcaption.caption span.id{font-weight: bold; white-space: nowrap; }
 /* end css.sty */
 
