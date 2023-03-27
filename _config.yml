@@ -1,3 +1,9 @@
 title: Bernardo Paulsen
-description: descrição
+description: Professional website of Bernardo Paulsen.
 theme: just-the-docs
+logo: "/assets/profile-pic.png"
+
+url: https://bernardopaulsen.github.io/professional-site
+
+aux_links:
+  Template Repository: https://github.com/just-the-docs/just-the-docs-template
