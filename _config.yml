@@ -3,7 +3,6 @@ description: Professional website of Bernardo Paulsen.
 theme: just-the-docs
 logo: "/assets/profile-pic.png"
 
-url: https://bernardopaulsen.github.io
 
-aux_links:
-  Template Repository: https://github.com/just-the-docs/just-the-docs-template
+baseurl: "/guidelines"
+remote_theme: pmarsceill/just-the-docs
