@@ -1,5 +1,5 @@
-Bem-vindo
-=========
+Bernardo Paulsen
+================
 
 .. image:: assets/profile-pic.png
   :width: 200
