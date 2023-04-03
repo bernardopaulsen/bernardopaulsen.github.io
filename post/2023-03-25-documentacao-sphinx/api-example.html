@@ -1,0 +1,34 @@
+<embed>
+<div class="my-box">
+<dt class="sig sig-object py" id="add_logger.AddLogger">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">add_logger.</span></span><span class="sig-name descname"><span class="pre">AddLogger</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#add_logger.AddLogger" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class decorator that adds a logger attribute to the decorated class.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>name</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]) – Name of Logger. If None, the qualified name of the class
+passed to <a class="reference internal" href="#add_logger.AddLogger.__call__" title="add_logger.AddLogger.__call__"><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_logger.AddLogger.__call__()</span></code></a> will be the name of
+the logger.</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="add_logger.AddLogger.__call__">
+<span class="sig-name descname"><span class="pre">__call__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cls</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#add_logger.AddLogger.__call__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add logger attribute to class.</p>
+<p>The name of the attribute will be ‘_logger’.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>cls</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">Class</span></code>)) – Class to which add logger. If no name was passed to
+<code class="xref py py-meth docutils literal notranslate"><span class="pre">add_logger.AddLogger.__init__()</span></code>, the qualified name of the
+class passed to this parameter will be the name of the logger.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Type</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">Class</span></code>)]</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Class with logger attribute.</p>
+</dd>
+</dl>
+</dd></dl>
+</dd>
+</div>
+</embed>

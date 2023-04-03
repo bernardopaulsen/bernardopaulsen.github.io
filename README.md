@@ -1,3 +1,0 @@
-# Bernardo Paulsen
-
-Professional website.
