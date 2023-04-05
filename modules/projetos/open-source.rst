@@ -22,6 +22,10 @@ O **log_decor** está disponível no repositório oficial `PyPI`_, onde você po
 
 Para facilitar o uso do **log_decor**, todo o projeto tem documentação completa na página do projeto no `GitHub Pages`_, incluindo exemplos de uso e guias de instalação. Isso torna o **log_decor** uma opção ideal para desenvolvedores que desejam adicionar *logging* em suas aplicações de forma rápida e fácil.
 
+- `PyPI`_
+- `GitHub`_
+- `GitHub Pages`_
+
 
 .. _GitHub: https://github.com/bernardopaulsen/log_decor
 .. _PyPI: https://pypi.org/project/log-decor/
