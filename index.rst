@@ -29,11 +29,11 @@ Realizei a maior parte das pesquisas em finanças quatitativas (tanto na univers
 Dados: Apenas o Começo
 ----------------------
 
-No blog :ref:`blog` eu compartilho conhecimentos sobre finanças quantitativas e ciência de dados. 
+No blog :ref:blog, compartilho conhecimentos sobre Finanças Quantitativas e Ciência de Dados.
 
-O blog ainda é um projeto novo, que por enquanto tem poucas postagens, mais voltadas à prática da ciência de dados.
+O blog ainda é um projeto novo e, por enquanto, tem poucas postagens, mais voltadas à prática da ciência de dados.
 
-Te convido a visitá-lo! Além de apresentar conhecimentos que considero muito úteis para o dia-a-dia do cientista de dados, ele é também uma oportunidade para você conhecer meu trabalho mais de perto.
+Convido-o a visitá-lo! Além de apresentar conhecimentos que considero muito úteis para o dia a dia do cientista de dados, ele também é uma oportunidade para você conhecer meu trabalho mais de perto.
 
 ----
 
