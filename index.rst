@@ -15,9 +15,9 @@ Espero que encontre neste site todas as informações que procura sobre meu trab
 Sobre mim
 ---------
 
-**Mestre e graduado em economia pela UFRGS**, ao longo da minha carreira desenvolvi uma grande paixão por **finanças quantitativas e ciência de dados**, tanto na universidade - one atuei em pesquisa em ambas as áreas - quanto no mercado de trabalho - onde já atuei como **Analista Macroeconômico**, **Agente Autônomo de Investimentos** e **Cientista de Dados em Finanças Quantitativas**.
+**Mestre e graduado em Economia pela UFRGS**, ao longo da minha carreira desenvolvi grande paixão por **Finanças Quantitativas e Ciência de Dados**, tanto na universidade - onde atuei em pesquisa em ambas as áreas - quanto no mercado de trabalho - onde já atuei como **Analista Macroeconômico**, **Agente Autônomo de Investimentos** e **Cientista de Dados em Finanças Quantitativas**.
 
-Trabalho majoritariamente com a linguagem de programação **Python**, que utilizo desde a graduação para realizar diversos projetos de ciência de dados. Tenho experiência com bancos de dados **SQL** e **NoSQL**, com o sistema de controle de versão **git** e as plataformas de hospedagem que o utilizam, e com o uso de **Docker** para o desenvolvimento e *deployment* de aplicativos.
+Trabalho majoritariamente com a linguagem de programação **Python**, que utilizo desde a graduação para realizar diversos projetos de ciência de dados. Tenho experiência com bancos de dados **SQL** e **NoSQL**, com o sistema de controle de versão **git** e as plataformas de hospedagem que o utilizam, além do uso de **Docker** para o desenvolvimento e *deployment* de aplicativos.
 
 Realizei a maior parte das pesquisas em finanças quatitativas (tanto na universidade quanto no mercado de trabalho) utilizando técnicas de **econometria financeira**. Para realizar as análises, uso de forma intensa as bibliotecas Python relacionadas à ciência de dados, como **numpy**, **scipy**, **pandas**, **statsmodels**, **scikit-learn**, **matplotlib** e **seaborn**. Nos trabalhos de *web-scraping*, utilizei **scrapy**, **selenium** e **beautifulsoup**.
 
