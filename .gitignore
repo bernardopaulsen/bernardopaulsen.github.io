@@ -1,0 +1,5 @@
+# Ambiente Virtual Python
+.venv/
+
+# Documentação Sphinx
+_build/
