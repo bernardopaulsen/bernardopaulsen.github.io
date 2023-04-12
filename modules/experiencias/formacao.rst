@@ -25,6 +25,8 @@ Graduação em Ciências Econômicas
 
 **Universidade Federal do Rio Grande do Sul**, 2020 - 2022
 
+Ao longo da graduação, direcionei meu aprendizado gradativamente para a área de finanças quantiativas, cursando disciplinas eletivas como Tópicos Especiais em Econometria, Derivativos e Riscos, e Econometria Financeira.
+
 Produzi o Trabalho de Conclusão de Curso :ref:`Some Evidence on Political Information and Exchange Coupon in Brazil <TCC>`.
 
 Atuei como :ref:`Agente Autônomo de Investimentos`.
