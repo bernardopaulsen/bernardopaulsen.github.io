@@ -66,3 +66,6 @@ Apreciação em si só acontece após a reunião presencial ou virtual. Nesta re
 Ao contratar meus serviços de consultoria, você pode esperar comunicação clara e consistente em todas as etapas do processo. Meu objetivo é garantir que você esteja sempre informado sobre o progresso do projeto e que suas necessidades de negócios sejam atendidas de forma eficiente e eficaz.
 
 Se você tiver alguma dúvida sobre o processo de comunicação e precificação ou quiser discutir seus projetos de consultoria em mais detalhes, por favor, não hesite em entrar em contato comigo pelo e-mail fornecido na página inicial. Estou sempre disponível para ajudá-lo e garantir que você receba serviços de consultoria de alta qualidade e atenda às suas necessidades de negócios.
+
+Projetos Realizados
+===================

@@ -1,5 +1,6 @@
 .. post:: 2023-03-20
-   :tags: tutorial
+   :tags: tutorial, jupyter notebook, docker
+   :category: blog
    :author: me
    :language: pt_BR
 

@@ -1,5 +1,6 @@
 .. post:: 2023-03-25
-   :tags: estudo
+   :tags: python, documentação, sphinx, autodoc, read the docs
+   :category: blog
    :author: me
    :language: pt_BR
 
