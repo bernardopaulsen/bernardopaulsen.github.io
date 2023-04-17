@@ -12,7 +12,9 @@ Durante a minha formação acadêmica trabalhei como :ref:`Analista Macroeconôm
 Mestrado Profissional em Economia
 =================================
 
-**Universidade Federal do Rio Grande do Sul**, 2014 - 2019
+**Universidade Federal do Rio Grande do Sul**, 2020 - 2022
+
+Ao longo do mestrado, direcionei meu aprendizado para a área de finanças quantiativas, cursando disciplinas eletivas como Mercado de Capitais e Métodos de Ciências de Dados em Economia Computacional.
 
 Produzi a Dissertação :ref:`Politics and Informational Efficiency: Brazilian Term Structure <dissertacao>`
 
@@ -23,9 +25,9 @@ Atuei como :ref:`Cientista de Dados em Finanças Quantitativas`.
 Graduação em Ciências Econômicas
 ================================
 
-**Universidade Federal do Rio Grande do Sul**, 2020 - 2022
+**Universidade Federal do Rio Grande do Sul**, 2014 - 2019
 
-Ao longo da graduação, direcionei meu aprendizado gradativamente para a área de finanças quantiativas, cursando disciplinas eletivas como Tópicos Especiais em Econometria, Derivativos e Riscos, e Econometria Financeira.
+Ao longo da graduação, direcionei meu aprendizado para a área de finanças quantiativas, cursando disciplinas eletivas como Tópicos Especiais em Econometria, Derivativos e Riscos, e Econometria Financeira.
 
 Produzi o Trabalho de Conclusão de Curso :ref:`Some Evidence on Political Information and Exchange Coupon in Brazil <TCC>`.
 
