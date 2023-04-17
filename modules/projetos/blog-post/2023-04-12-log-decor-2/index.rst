@@ -1,6 +1,6 @@
 .. post:: 2023-04-12
    :tags: open-source, log-decor
-   :category: blog
+   :category: blog, log-decor
    :author: me
    :language: pt_BR
 

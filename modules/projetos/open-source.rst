@@ -26,6 +26,16 @@ Para facilitar o uso do **log_decor**, todo o projeto tem documentação complet
 - `GitHub`_
 - `GitHub Pages`_
 
+Postagens sobre log-decor no blog 'Dados: Apenas o Começo'
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. postlist::
+   :category: log-decor
+   :date: %d/%m/%Y
+   :format: {title}, {date}
+   :excerpts:
+   :expand: Leia mais ...
+
 
 .. _GitHub: https://github.com/bernardopaulsen/log_decor
 .. _PyPI: https://pypi.org/project/log-decor/
