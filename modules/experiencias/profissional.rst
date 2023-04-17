@@ -49,7 +49,12 @@ Estudei as diferentes **classes de ativos** do mercado financeiro brasileiro, co
 
 .. tributação
 
-Montei carteiras de investimento considerando as **diferentes tributações** do mercado financeiro, como as tributações de renda variável, de títulos de renda fixa, de fundos de investimento, e as diferentes tributações para fundos de previdência.
+Montei carteiras de investimento considerando as diferentes **tributações de ativos financeiros**, como as tributações de renda variável, de títulos de renda fixa, de fundos de investimento, e as diferentes tributações para fundos de previdência.
+
+.. tipos de investidores
+
+
+Assessorei investidores de diferentes **classificações de suitability** , como investidores qualificados e de varejo. 
 
 .. especificidades dos clientes
 
