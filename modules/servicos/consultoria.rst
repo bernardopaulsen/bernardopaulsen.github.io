@@ -69,3 +69,11 @@ Se você tiver alguma dúvida sobre o processo de comunicação e precificação
 
 Projetos Realizados
 ===================
+
+.. postlist::
+   :category: projeto
+   :date: %m/%Y
+   :format: {title}, {date}
+   :excerpts:
+   :expand: Leia mais ...
+
