@@ -65,6 +65,11 @@ Adicionar funcionalidade de logging a uma função
     @log_info()
     def f():
         pass
+
+
+>>> logging.basicConfig(level=logging.DEBUG)
+>>> f()
+DEBUG:root:f() [0.0001s] -> None
         
 
 Adicionar logger a uma classe
@@ -102,6 +107,12 @@ Adicionar funcionalidade de logging a um método
         @log_info()
         def f(self):
             pass
+
+
+>>> logging.basicConfig(level=logging.DEBUG)
+>>> example = Example()
+>>> example.f()
+DEBUG:Example:f() [0.0001s] -> None
 
 
 Definir as configurações de logging
