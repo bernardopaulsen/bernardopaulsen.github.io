@@ -67,6 +67,13 @@ Ao contratar meus serviços de consultoria, você pode esperar comunicação cla
 
 Se você tiver alguma dúvida sobre o processo de comunicação e precificação ou quiser discutir seus projetos de consultoria em mais detalhes, por favor, não hesite em entrar em contato comigo pelo e-mail fornecido na página inicial. Estou sempre disponível para ajudá-lo e garantir que você receba serviços de consultoria de alta qualidade e atenda às suas necessidades de negócios.
 
+Upwork
+======
+
+Também atuo como consultor através da plataforma Upwork. Uma das vantagens de utilizar o Upwork é a facilidade de pagamento e a formalização do processo. Fique à vontade para entrar em contato comigo através da plataforma.
+
+- `Perfil na Upwork <https://www.upwork.com/freelancers/bernardop3>`_
+
 Projetos Realizados
 ===================
 
