@@ -116,6 +116,23 @@ Após a construção da imagem, podemos executá-la em um container utilizando o
     docker run -it --rm -p 8888:8888 -v $(pwd)/notebooks:/home/jovyan/work/ jupyter-exemplo
 
 
+.. note::
+
+    Na configuração padrão, o container é executado com o usuário **jovyan**, o que impossibilita a execução de comandos com privilégios de superusuário (já que a senha do usuário é necessária). Para executar este tipo de comandos, é necessário criar um usuário e desabilitar a necessidade de prover a senha ao executar comandos com **sudo**.
+
+    .. code-block:: bash
+
+        docker run -it --rm  \
+        -p 8888:8888 \
+        --user root \
+        -e NB_USER="myuser" \
+        -e CHOWN_HOME=yes \
+        -e GRANT_SUDO=yes \
+        -w "/home/${NB_USER}" \
+        -v $(pwd)/notebooks:/home/myuser \
+        jupyter-exemplo
+
+
 Este comando executa o container a partir da imagem personalizada, mapeia a porta do servidor Jupyter no host para a porta ``8888`` do container e monta o diretório de notebooks local no diretório padrão do Jupyter Notebook dentro do container.
 
 Com isso, podemos acessar o notebook pelo navegador utilizando a URL fornecida pelo Docker no terminal, e começar a trabalhar com os dados utilizando a biblioteca pandas.
