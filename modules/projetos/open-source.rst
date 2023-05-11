@@ -21,13 +21,30 @@ O **log_decor** é um projeto *open-source* escrito em Python que fornece decora
 
 Os decoradores de classe adicionam um *logger* à classe, permitindo que sejam registrados eventos específicos da classe, bem como informações úteis sobre a sua execução. Os decoradores de funções e métodos criam mensagens de *log* sempre que o objeto decorado é chamado, e essas mensagens podem ter diversos formatos, desde simples mensagens pré-definidas até informações detalhadas sobre a execução do método.
 
-O **log_decor** está disponível no repositório oficial `PyPI <https://pypi.org/project/log-decor/>`_, onde você pode facilmente instalá-lo em sua aplicação. Além disso, todo o código-fonte do projeto está disponível no repositório `GitHub <https://github.com/bernardopaulsen/log_decor>`_, permitindo que você contribua para o projeto e personalize o pacote para suas necessidades específicas.
+O exemplo a seguir utiliza a biblioteca para adicionar funcionalidade de logging a uma função:
 
-Para facilitar o uso do **log_decor**, todo o projeto tem documentação completa na página do projeto no `GitHub Pages <https://bernardopaulsen.github.io/log_decor/>`_, incluindo exemplos de uso e guias de instalação. Isso torna o **log_decor** uma opção ideal para desenvolvedores que desejam adicionar *logging* em suas aplicações de forma rápida e fácil.
+.. code-block:: python
 
-- `PyPI <https://pypi.org/project/log-decor/>`_
-- `GitHub <https://github.com/bernardopaulsen/log_decor>`_
-- `GitHub Pages <https://bernardopaulsen.github.io/log_decor/>`_
+    from log_decor import log_info
+
+
+    # logs no nível DEBUG
+    @log_info()
+    def f():
+        pass
+
+
+>>> logging.basicConfig(level=logging.DEBUG)
+>>> f()
+DEBUG:root:f() [0.0001s] -> None
+
+O **log_decor** está disponível no repositório oficial PyPI, onde você pode facilmente instalá-lo em sua aplicação. Além disso, todo o código-fonte do projeto está disponível no repositórioGitHub, permitindo que você contribua para o projeto e personalize o pacote para suas necessidades específicas.
+
+Para facilitar o uso do **log_decor**, todo o projeto tem documentação completa na página do projeto no GitHub Pages, incluindo exemplos de uso e guias de instalação. Isso torna o **log_decor** uma opção ideal para desenvolvedores que desejam adicionar *logging* em suas aplicações de forma rápida e fácil.
+
+- `log_decor - PyPI <https://pypi.org/project/log-decor/>`_
+- `log_decor - Código <https://github.com/bernardopaulsen/log_decor>`_
+- `log_decor - Documentação <https://bernardopaulsen.github.io/log_decor/>`_
 
 Postagens sobre log-decor no blog 'Dados: Apenas o Começo'
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -45,5 +62,27 @@ banco_central_ts
 O **banco_central_ts** é um pacote Python bastante simples.
 Ela apenas oferece uma função que realiza coleta de dados pela API do `Sistema Gerenciador de Séries Temporais do Banco Central do Brasil <https://www3.bcb.gov.br/sgspub>`_.
 
-- `GitHub <https://github.com/bernardopaulsen/banco_central_ts>`_
-- `GitHub Pages <https://bernardopaulsen.github.io/banco_central_ts/>`_
+o exemplo a seguir utiliza a biblioteca para coletar todos os dados da série temporal de valores diários da taxa CDI,
+que possui código o 12.
+
+.. code-block:: python
+
+   from banco_central_ts import get as bacen_ts
+
+
+   cdi_rate = bacen_ts(12)
+
+
+>>> type(cdi_rate)
+pandas.core.frame.DataFrame
+>>> cdi_rate.head()
+               valor
+data
+1986-03-06  0.068111
+1986-03-10  0.069028
+1986-03-12  0.067417
+1986-03-14  0.064584
+1986-03-17  0.068222
+
+- `banco_central_ts - Código <https://github.com/bernardopaulsen/banco_central_ts>`_
+- `banco_central_ts - Documentação <https://bernardopaulsen.github.io/banco_central_ts/>`_
