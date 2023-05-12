@@ -77,6 +77,8 @@ Alguns exemplos de livros publicados pela Packt são:
 - `Hands-On Software Engineering with Python <https://www.packtpub.com/product/hands-on-software-engineering-with-python/9781788622011>`_ (2018)
 - `Python: Journey from Novice to Expert <https://www.oreilly.com/library/view/python-journey-from/9781787120761/>`_ (2016)
 
+.. _oreilly_media:
+
 O'Reilly Media
 --------------
 
@@ -87,6 +89,8 @@ Alguns exemplos de livros publicados pela O'Reilly são:
 - `Fluent Python <https://www.oreilly.com/library/view/fluent-python-2nd/9781492056348/>`_ (2022)
 - `Robust Python <https://www.oreilly.com/library/view/robust-python/9781098100650/>`_ (2021)
 - `High Performance Python <https://www.oreilly.com/library/view/high-performance-python/9781492055013/>`_ (2020)
+
+.. _manning-publications:
 
 Manning Publications
 --------------------
