@@ -30,7 +30,7 @@ acadêmica quanto a quaisquer indivíduos fora dela. Isso significa que a estrat
 empírica de cada pesquisa é implementada computacionalmente e disponibilizada para
 acesso geral junto aos dados usados pela pesquisa.
 
-Abaixo, descrevo brevemente os artigos que produzi durante a minha formação acadêmica na UFRGS.
+Abaixo, apresento os resumos dos artigos que produzi durante a minha formação acadêmica na UFRGS.
 
 .. _TCC:
 
@@ -105,3 +105,5 @@ Some Evidence on Political Information and Exchange Coupon in Brazil
     </embed>
 
 :download:`Some Evidence on Political Information and Exchange Coupon in Brazil <../../assets/BernardoPaulsen-TCC.pdf>`
+
+Tecnologias: Python, SQL. Conceitos: Ciência Empírica, Econometria, Precificação de Ativos, Web-Scraping.
