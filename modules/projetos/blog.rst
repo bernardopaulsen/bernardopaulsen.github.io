@@ -15,7 +15,7 @@ Artigos
 =======
 
 .. postlist::
-   :category: blog
+   :category: blog, pt
    :date: %d/%m/%Y
    :format: {title}, {date}
    :excerpts:
