@@ -1,6 +1,6 @@
 .. post:: 2023-03-20
    :tags: estudo, python
-   :category: blog
+   :category: blog, pt
    :author: me
    :language: pt_BR
 
