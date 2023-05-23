@@ -55,6 +55,7 @@ Convido-o a visitá-lo! Além de apresentar conhecimentos que considero muito ú
 
    modules/projetos/open-source
    modules/projetos/blog
+   modules/projetos/blog-en
 
 .. toctree::
    :maxdepth: 1
