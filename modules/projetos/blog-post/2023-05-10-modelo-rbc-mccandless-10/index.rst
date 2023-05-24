@@ -1,6 +1,6 @@
 .. post:: 2023-05-10
    :tags: python, macroeconomia, ciclos reais de negócios
-   :category: blog
+   :category: blog, pt
    :author: me
    :language: pt_BR
 

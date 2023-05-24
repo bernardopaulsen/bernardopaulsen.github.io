@@ -1,6 +1,6 @@
 .. post:: 2023-05-12
    :tags: python, recomendação
-   :category: blog
+   :category: blog, pt
    :author: me
    :language: pt_BR
 

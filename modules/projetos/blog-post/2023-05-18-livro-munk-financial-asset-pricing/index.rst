@@ -1,6 +1,6 @@
 .. post:: 2023-05-18
    :tags: econometria, recomendação
-   :category: blog
+   :category: blog, pt
    :author: me
    :language: pt_BR
 
