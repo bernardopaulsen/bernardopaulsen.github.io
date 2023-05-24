@@ -41,7 +41,7 @@ Investi em boas práticas de **código limpo**, **princípios SOLID** de arquite
 
 .. alta performance
 
-Realizei processos para melhorar a performance da execução de aplicativos Python, como: *profiling* de processamento e memória com as bibliotecas **cProfile**, **line_profiler** e **memory_profiler**; vetorização de cálculos e computações com a biblioteca **numpy**; compilação de módulos para a linguagem C com o uso da biblioteca **cython**; e execução paralela de processos com o uso das bibliotecas **threading** e **multiprocessing**.
+Realizei processos para melhorar a performance da execução de aplicativos Python, como: *profiling* de processamento com a biblioteca **line_profiler**; vetorização de cálculos e computações com a biblioteca **numpy**; compilação de módulos para a linguagem C com o uso da biblioteca **cython**; e execução paralela de processos com o uso das bibliotecas **threading** e **multiprocessing**.
 
 Tecnologias: Python, Docker, PostgreSQL, MongoDB, ElasticSearch, Git e GitLab, Computação em Nuvem (AWS). Conceitos: Big Data, Negociação de Alta Frequência, Microestrutura de Mercado, Execução Ótima, Backtesting, Computação em Nuvem, CI/CD, Engenharia de Software.
 

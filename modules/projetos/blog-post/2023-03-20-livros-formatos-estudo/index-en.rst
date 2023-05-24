@@ -103,9 +103,7 @@ Some examples of books published by Manning are:
 Subscription Services
 ---------------------
 
-Both
-
- Packt and O'Reilly offer subscription services (`Packt subscription service <https://subscription.packtpub.com/>`_, `O'Reilly subscription service <https://www.oreilly.com/online-learning/>`_) that provide access to a wide variety of books and online courses related to technology and data science. These subscription services are an interesting option for those who want to expand their knowledge and have access to a large volume of study materials.
+Both Packt and O'Reilly offer subscription services (`Packt subscription service <https://subscription.packtpub.com/>`_, `O'Reilly subscription service <https://www.oreilly.com/online-learning/>`_) that provide access to a wide variety of books and online courses related to technology and data science. These subscription services are an interesting option for those who want to expand their knowledge and have access to a large volume of study materials.
 
 
 Data Science and Quantitative Finance
@@ -136,8 +134,8 @@ Finance books typically cover topics such as financial modeling, investments, ri
 - `Learn Algorithmic Trading <https://www.packtpub.com/product/learn-algorithmic-trading/9781789348347>`_ (Packt Publishing, 2019)
 - `Mastering Python for Finance <https://www.packtpub.com/product/mastering-python-for-finance-second-edition/9781789346466>`_ (Packt Publishing, 2019)
 
-Conclusion
-==========
+Concluding Remarks
+==================
 
 There are various ways to study in the field of data science, including YouTube videos, online courses, documentation, and books. Each of these formats has its strengths and weaknesses and can be used according to the needs and preferences of each individual.
 

@@ -26,16 +26,14 @@ Utilizei métodos de **modelagem econométrica** e **finanças quantitativas** p
 Toda a pesquisa foi realizada no paradigma de 
 `Open Science <https://en.wikipedia.org/wiki/Open_science>`_, no qual se busca fazer
 da pesquisa científica algo acessível a todos - tanto aos participantes da comunidade
-acadêmica quanto a quaisquer indivíduos fora dela. Isso significa que a estratégia
-empírica de cada pesquisa é implementada computacionalmente e disponibilizada para
-acesso geral junto aos dados usados pela pesquisa.
+acadêmica quanto a quaisquer indivíduos fora dela.
 
 Abaixo, apresento os resumos dos artigos que produzi durante a minha formação acadêmica na UFRGS.
 
-.. _TCC:
+.. _dissertacao:
 
-Politics and Informational Efficiency: Brazilian Term Structure
-===============================================================
+Dissertação: Politics and Informational Efficiency: Brazilian Term Structure
+============================================================================
 
 .. raw:: html
 
@@ -72,10 +70,10 @@ Politics and Informational Efficiency: Brazilian Term Structure
 
 :download:`Politics and Informational Efficiency: Brazilian Term Structure <../../assets/BernardoPaulsen-dissertacao.pdf>`
 
-.. _dissertacao:
+.. _TCC:
 
-Some Evidence on Political Information and Exchange Coupon in Brazil
-====================================================================
+Trabalho de Conclusão de Curso: Some Evidence on Political Information and Exchange Coupon in Brazil
+====================================================================================================
 
 .. raw:: html
 
