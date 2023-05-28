@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt-BR" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>log-decor 2.0 &mdash; documentação Bernardo Paulsen 0.0.0</title>
+      <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../../_static/jquery.js"></script>
+        <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
+        <script src="../../../../_static/doctools.js"></script>
+        <script src="../../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../../_static/translations.js"></script>
+    <script src="../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../../../../genindex.html" />
+    <link rel="search" title="Buscar" href="../../../../search.html" />
+ 
+
+
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../../index.html" class="icon icon-home">
+            Bernardo Paulsen
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Pesquisar documentos" aria-label="Pesquisar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <p class="caption" role="heading"><span class="caption-text">Sobre Mim (pt-BR):</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../experiencias/profissional.html">Experiência Profissional</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../experiencias/formacao.html">Formação Acadêmica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../experiencias/pesquisa.html">Pesquisa</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Projetos (pt-br):</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../open-source.html">Bibliotecas de Código Aberto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../blog.html">Dados: Apenas o Começo</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Serviços (pt-br):</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../servicos/consultoria.html">Consultoria</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../servicos/treinamento.html">Treinamento</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">About Me (en)</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../experiencias/profissional-en.html">Professional Experience</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../experiencias/formacao-en.html">Academic Background</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../experiencias/pesquisa-en.html">Research</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Projects (en):</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../open-source-en.html">Open-Source Libraries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../blog-en.html">Data: Just the Beginning</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">Bernardo Paulsen</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Navegação da página">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">log-decor 2.0</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../../_sources/modules/projetos/blog-post/2023-04-12-log-decor-2/index.rst.txt" rel="nofollow"> Ver código-fonte da página</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+<style>
+.my-box {
+border: 1px solid #ddd;
+border-radius: 6px;
+padding: 10px;
+margin-bottom: 10px
+}
+</style><section id="log-decor-2-0">
+<h1>log-decor 2.0<a class="headerlink" href="#log-decor-2-0" title="Link permanente para este cabeçalho"></a></h1>
+<p>Nesta postagem venho anunciar a versão 2.0 da minha biblioteca open-source, <strong>log-decor</strong>!</p>
+<p>Os links referentes à biblioteca são os seguintes:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://pypi.org/project/log-decor/">PyPI</a></p></li>
+<li><p><a class="reference external" href="https://github.com/bernardopaulsen/log_decor">GitHub</a></p></li>
+<li><p><a class="reference external" href="https://bernardopaulsen.github.io/log_decor/">GitHub Pages</a></p></li>
+</ul>
+<p>A <strong>log-decor</strong> é uma biblioteca Python que fornece decoradores para adicionar a funcionalidade de <em>logging</em> aos objetos.</p>
+<p>Algumas novidades relacionadas ao uso da biblioteca são:</p>
+<ol class="arabic simple">
+<li><p>Antes, os decoradores só podiam ser usados em métodos de classes, mas agora eles também podem ser utilizados em funções avulsas.</p></li>
+<li><p>Um novo decorador foi adicionado, em que o usuário pode fornecer funções para processar os argumentos e o resultado do objeto decorado antes que essas informações sejam logadas.</p></li>
+</ol>
+<p>Foram realizadas também algumas melhorias internas na biblioteca, como:</p>
+<ol class="arabic simple">
+<li><p>O código foi refatorado de forma a torná-lo mais simples, compreensível e de acordo com os princípios de Código Limpo;</p></li>
+<li><p>Foi adicionado um <em>workflow</em> de testes unitários para garantir a qualidade do software.</p></li>
+<li><p>A documentação foi transferida do Read the Docs para o <a class="reference external" href="https://bernardopaulsen.github.io/log_decor/">GitHub Pages</a>.</p></li>
+</ol>
+<p>E por último, mas não menos importante, agora a biblioteca está publicada pelo <a class="reference external" href="https://pypi.org/project/log-decor/">PyPI</a> e pode ser instalada facilmente com o comando</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">log</span><span class="o">-</span><span class="n">decor</span>
+</pre></div>
+</div>
+<section id="exemplos-de-uso">
+<h2>Exemplos de uso<a class="headerlink" href="#exemplos-de-uso" title="Link permanente para este cabeçalho"></a></h2>
+<section id="adicionar-funcionalidade-de-logging-a-uma-funcao">
+<h3>Adicionar funcionalidade de logging a uma função<a class="headerlink" href="#adicionar-funcionalidade-de-logging-a-uma-funcao" title="Link permanente para este cabeçalho"></a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">log_decor</span> <span class="kn">import</span> <span class="n">log_info</span>
+
+
+<span class="c1"># logs no nível DEBUG</span>
+<span class="nd">@log_info</span><span class="p">()</span>
+<span class="k">def</span> <span class="nf">f</span><span class="p">():</span>
+    <span class="k">pass</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">logging</span><span class="o">.</span><span class="n">basicConfig</span><span class="p">(</span><span class="n">level</span><span class="o">=</span><span class="n">logging</span><span class="o">.</span><span class="n">DEBUG</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">f</span><span class="p">()</span>
+<span class="go">DEBUG:root:f() [0.0001s] -&gt; None</span>
+</pre></div>
+</div>
+</section>
+<section id="adicionar-logger-a-uma-classe">
+<h3>Adicionar logger a uma classe<a class="headerlink" href="#adicionar-logger-a-uma-classe" title="Link permanente para este cabeçalho"></a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">log_decor</span> <span class="kn">import</span> <span class="n">add_logger</span>
+
+
+<span class="c1"># logger com nome &#39;Exaxmple&#39;</span>
+<span class="nd">@add_logger</span><span class="p">()</span>
+<span class="k">class</span> <span class="nc">Example</span><span class="p">:</span>
+    <span class="k">pass</span>
+
+<span class="c1"># logger com nome &#39;LoggerName&#39;</span>
+<span class="nd">@add_logger</span><span class="p">(</span><span class="s1">&#39;LoggerName&#39;</span><span class="p">)</span>
+<span class="k">class</span> <span class="nc">Example</span><span class="p">:</span>
+    <span class="k">pass</span>
+</pre></div>
+</div>
+</section>
+<section id="adicionar-funcionalidade-de-logging-a-um-metodo">
+<h3>Adicionar funcionalidade de logging a um método<a class="headerlink" href="#adicionar-funcionalidade-de-logging-a-um-metodo" title="Link permanente para este cabeçalho"></a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">log_decor</span> <span class="kn">import</span> <span class="n">add_logger</span><span class="p">,</span> <span class="n">log_info</span>
+
+
+<span class="c1"># logger com nome &#39;Example&#39;</span>
+<span class="nd">@add_logger</span><span class="p">()</span>
+<span class="k">class</span> <span class="nc">Example</span><span class="p">:</span>
+
+    <span class="c1"># logs no nível DEBUG</span>
+    <span class="nd">@log_info</span><span class="p">()</span>
+    <span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">pass</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">logging</span><span class="o">.</span><span class="n">basicConfig</span><span class="p">(</span><span class="n">level</span><span class="o">=</span><span class="n">logging</span><span class="o">.</span><span class="n">DEBUG</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">example</span> <span class="o">=</span> <span class="n">Example</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">example</span><span class="o">.</span><span class="n">f</span><span class="p">()</span>
+<span class="go">DEBUG:Example:f() [0.0001s] -&gt; None</span>
+</pre></div>
+</div>
+</section>
+<section id="definir-as-configuracoes-de-logging">
+<h3>Definir as configurações de logging<a class="headerlink" href="#definir-as-configuracoes-de-logging" title="Link permanente para este cabeçalho"></a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">logging</span>
+
+
+<span class="n">logging</span><span class="o">.</span><span class="n">basicConfig</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s1">&#39;example.log&#39;</span><span class="p">,</span>
+                    <span class="n">level</span><span class="o">=</span><span class="n">logging</span><span class="o">.</span><span class="n">WARNING</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+
+<div class="section ablog__blog_comments">
+  
+  
+
+
+<div class="section ablog__prev-next">
+  <span class="ablog__prev">
+    
+    
+    Anterior:
+    
+    <a href="../../../servicos/projetos-realizados/2023-03-audio/index.html">
+      
+      <span>Diarização de Audio</span>
+    </a>
+    
+  </span>
+  <span class="ablog__spacer">&nbsp;</span>
+  <span class="ablog__next">
+    
+    
+    Próximo:
+    
+    <a href="../../../servicos/projetos-realizados/2023-04-estrategia-momentum/index.html">
+      <span>Estratégia de Momentum para Contratos Futuros</span>
+      
+    </a>
+    
+  </span>
+</div>
+
+  
+  
+</div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Bernardo Paulsen.</p>
+  </div>
+
+  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

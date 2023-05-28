@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt-BR" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Estratégia de Momentum para Contratos Futuros &mdash; documentação Bernardo Paulsen 0.0.0</title>
+      <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../../_static/jquery.js"></script>
+        <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
+        <script src="../../../../_static/doctools.js"></script>
+        <script src="../../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../../_static/translations.js"></script>
+    <script src="../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../../../../genindex.html" />
+    <link rel="search" title="Buscar" href="../../../../search.html" />
+ 
+
+
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../../index.html" class="icon icon-home">
+            Bernardo Paulsen
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Pesquisar documentos" aria-label="Pesquisar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <p class="caption" role="heading"><span class="caption-text">Sobre Mim (pt-BR):</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../experiencias/profissional.html">Experiência Profissional</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../experiencias/formacao.html">Formação Acadêmica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../experiencias/pesquisa.html">Pesquisa</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Projetos (pt-br):</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../projetos/open-source.html">Bibliotecas de Código Aberto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../projetos/blog.html">Dados: Apenas o Começo</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Serviços (pt-br):</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../consultoria.html">Consultoria</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../treinamento.html">Treinamento</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">About Me (en)</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../experiencias/profissional-en.html">Professional Experience</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../experiencias/formacao-en.html">Academic Background</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../experiencias/pesquisa-en.html">Research</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Projects (en):</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../projetos/open-source-en.html">Open-Source Libraries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../projetos/blog-en.html">Data: Just the Beginning</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">Bernardo Paulsen</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Navegação da página">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Estratégia de Momentum para Contratos Futuros</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../../_sources/modules/servicos/projetos-realizados/2023-04-estrategia-momentum/index.rst.txt" rel="nofollow"> Ver código-fonte da página</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+<section id="estrategia-de-momentum-para-contratos-futuros">
+<h1>Estratégia de Momentum para Contratos Futuros<a class="headerlink" href="#estrategia-de-momentum-para-contratos-futuros" title="Link permanente para este cabeçalho"></a></h1>
+<p>Neste projeto, criei um aplicativo de análise de retornos de contratos futuros e definição de pesos ótimos para uma estratégia de negociação baseada na ideia de <em>momentum</em>.</p>
+<section id="estrategia">
+<h2>Estratégia<a class="headerlink" href="#estrategia" title="Link permanente para este cabeçalho"></a></h2>
+<p>A estratégia leva em conta o <em>momentum</em> em contratos futuros de ativos de diversas classes, criando uma carteira de contratos futuros em que existem ativos comprados e ativos vendidos. O rebalancemanto da estratégia é mensal.</p>
+</section>
+<section id="contratos-futuros">
+<h2>Contratos Futuros<a class="headerlink" href="#contratos-futuros" title="Link permanente para este cabeçalho"></a></h2>
+<p>Os contratos futuros considerados dizem respeito a ativos financeiros de diversas classes, como ações, títulos de dívida, moedas e <em>commodities</em>.</p>
+</section>
+<section id="fatores-considerados">
+<h2>Fatores Considerados<a class="headerlink" href="#fatores-considerados" title="Link permanente para este cabeçalho"></a></h2>
+<p>A estratégia considera apenas os retornos e a volatilidade dos contratos futuros.</p>
+</section>
+<section id="analise-econometrica">
+<h2>Análise Econométrica<a class="headerlink" href="#analise-econometrica" title="Link permanente para este cabeçalho"></a></h2>
+<p>Os contratos futuros são analisados por meio de modelos autoregressivos que consideram tanto os retornos quanto a volatilidade dos contratos futuros.</p>
+</section>
+<section id="analise-de-performance-da-estrategia">
+<h2>Análise de Performance da Estratégia<a class="headerlink" href="#analise-de-performance-da-estrategia" title="Link permanente para este cabeçalho"></a></h2>
+<p>A performance das diferentes especificações da estratégia (tanto considerando cada ativo individualmente quanto a carteira com <em>n</em> ativos) é calculada a partir dos dados históricos, e comparada à performance de <em>benchmarks</em>.</p>
+</section>
+<section id="contrucao-do-portfolio">
+<h2>Contrução do Portfolio<a class="headerlink" href="#contrucao-do-portfolio" title="Link permanente para este cabeçalho"></a></h2>
+<p>A partir dos resultados da análise de performance histórica, são definidos o peso de cada ativo e se a estratégia estará comprada ou vendida em cada ativo.</p>
+</section>
+<section id="sobre-o-aplicativo">
+<h2>Sobre o Aplicativo<a class="headerlink" href="#sobre-o-aplicativo" title="Link permanente para este cabeçalho"></a></h2>
+<p>O aplicativo foi desenvolvido em Python e executado por meio de um container Docker. As bibliotecas <strong>numpy</strong>, <strong>pandas</strong> e <strong>statsmodels</strong> foram utilizadas para as análises e contrução do portfolio.</p>
+</section>
+</section>
+
+<div class="section ablog__blog_comments">
+  
+  
+
+
+<div class="section ablog__prev-next">
+  <span class="ablog__prev">
+    
+    
+    Anterior:
+    
+    <a href="../../../projetos/blog-post/2023-04-12-log-decor-2/index.html">
+      
+      <span>log-decor 2.0</span>
+    </a>
+    
+  </span>
+  <span class="ablog__spacer">&nbsp;</span>
+  <span class="ablog__next">
+    
+    
+    Próximo:
+    
+    <a href="../../../projetos/blog-post/2023-05-10-modelo-rbc-mccandless-10/index.html">
+      <span>Um Modelo de Equilíbrio Geral Estocástico</span>
+      
+    </a>
+    
+  </span>
+</div>
+
+  
+  
+</div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Bernardo Paulsen.</p>
+  </div>
+
+  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

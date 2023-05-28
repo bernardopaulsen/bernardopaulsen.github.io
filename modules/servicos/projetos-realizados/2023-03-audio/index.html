@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt-BR" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diarização de Audio &mdash; documentação Bernardo Paulsen 0.0.0</title>
+      <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../../_static/jquery.js"></script>
+        <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
+        <script src="../../../../_static/doctools.js"></script>
+        <script src="../../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../../_static/translations.js"></script>
+    <script src="../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../../../../genindex.html" />
+    <link rel="search" title="Buscar" href="../../../../search.html" />
+ 
+
+
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../../index.html" class="icon icon-home">
+            Bernardo Paulsen
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Pesquisar documentos" aria-label="Pesquisar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <p class="caption" role="heading"><span class="caption-text">Sobre Mim (pt-BR):</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../experiencias/profissional.html">Experiência Profissional</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../experiencias/formacao.html">Formação Acadêmica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../experiencias/pesquisa.html">Pesquisa</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Projetos (pt-br):</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../projetos/open-source.html">Bibliotecas de Código Aberto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../projetos/blog.html">Dados: Apenas o Começo</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Serviços (pt-br):</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../consultoria.html">Consultoria</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../treinamento.html">Treinamento</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">About Me (en)</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../experiencias/profissional-en.html">Professional Experience</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../experiencias/formacao-en.html">Academic Background</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../experiencias/pesquisa-en.html">Research</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Projects (en):</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../projetos/open-source-en.html">Open-Source Libraries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../projetos/blog-en.html">Data: Just the Beginning</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">Bernardo Paulsen</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Navegação da página">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Diarização de Audio</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../../_sources/modules/servicos/projetos-realizados/2023-03-audio/index.rst.txt" rel="nofollow"> Ver código-fonte da página</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+<section id="diarizacao-de-audio">
+<h1>Diarização de Audio<a class="headerlink" href="#diarizacao-de-audio" title="Link permanente para este cabeçalho"></a></h1>
+<p>Neste projeto realizei a diarização de audio de audio de conversas entre <em>n</em> interlocutores. O aplicativo foi desenvolvido em Python.</p>
+<section id="aprendizado-de-maquina">
+<h2>Aprendizado de Máquina<a class="headerlink" href="#aprendizado-de-maquina" title="Link permanente para este cabeçalho"></a></h2>
+<p>O modelo de <em>machine learning</em> utilizado para a diarização foi uma rede neural. O modelo foi aplicado com a utilização da biblioteca <strong>SpeechBrain</strong>, que é baseada na biblioteca <strong>PyTorch</strong>.</p>
+</section>
+</section>
+
+<div class="section ablog__blog_comments">
+  
+  
+
+
+<div class="section ablog__prev-next">
+  <span class="ablog__prev">
+    
+    
+    Anterior:
+    
+    <a href="../../../projetos/blog-post/2023-03-25-documentacao-sphinx/index.html">
+      
+      <span>Utilizando Sphinx para a geração de documentação de softwares escritos em Python</span>
+    </a>
+    
+  </span>
+  <span class="ablog__spacer">&nbsp;</span>
+  <span class="ablog__next">
+    
+    
+    Próximo:
+    
+    <a href="../../../projetos/blog-post/2023-04-12-log-decor-2/index.html">
+      <span>log-decor 2.0</span>
+      
+    </a>
+    
+  </span>
+</div>
+
+  
+  
+</div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Bernardo Paulsen.</p>
+  </div>
+
+  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

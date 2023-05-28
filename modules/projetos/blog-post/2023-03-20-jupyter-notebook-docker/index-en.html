@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt-BR" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Executing Jupyter Notebook with Docker &mdash; documentação Bernardo Paulsen 0.0.0</title>
+      <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../../_static/jquery.js"></script>
+        <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
+        <script src="../../../../_static/doctools.js"></script>
+        <script src="../../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../../_static/translations.js"></script>
+    <script src="../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../../../../genindex.html" />
+    <link rel="search" title="Buscar" href="../../../../search.html" />
+ 
+
+
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../../index.html" class="icon icon-home">
+            Bernardo Paulsen
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Pesquisar documentos" aria-label="Pesquisar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <p class="caption" role="heading"><span class="caption-text">Sobre Mim (pt-BR):</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../experiencias/profissional.html">Experiência Profissional</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../experiencias/formacao.html">Formação Acadêmica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../experiencias/pesquisa.html">Pesquisa</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Projetos (pt-br):</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../open-source.html">Bibliotecas de Código Aberto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../blog.html">Dados: Apenas o Começo</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Serviços (pt-br):</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../servicos/consultoria.html">Consultoria</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../servicos/treinamento.html">Treinamento</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">About Me (en)</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../experiencias/profissional-en.html">Professional Experience</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../experiencias/formacao-en.html">Academic Background</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../experiencias/pesquisa-en.html">Research</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Projects (en):</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../open-source-en.html">Open-Source Libraries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../blog-en.html">Data: Just the Beginning</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">Bernardo Paulsen</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Navegação da página">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Executing Jupyter Notebook with Docker</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../../_sources/modules/projetos/blog-post/2023-03-20-jupyter-notebook-docker/index-en.rst.txt" rel="nofollow"> Ver código-fonte da página</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+<section id="executing-jupyter-notebook-with-docker">
+<h1>Executing Jupyter Notebook with Docker<a class="headerlink" href="#executing-jupyter-notebook-with-docker" title="Link permanente para este cabeçalho"></a></h1>
+<p>In this post, I will show a step-by-step tutorial for running a Jupyter Notebook using Docker. The tutorial will cover everything from installing Docker to executing a Python notebook. The goal is to demonstrate how Docker can be a useful solution for running data science applications in different environments and operating systems.</p>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Link permanente para este cabeçalho"></a></h2>
+<section id="python-and-data-science">
+<h3>Python and data science<a class="headerlink" href="#python-and-data-science" title="Link permanente para este cabeçalho"></a></h3>
+<p><a class="reference external" href="https://www.python.org/">Python</a> is one of the most popular programming languages in the world of data science. It is widely used by data scientists, engineers, and researchers due to its ease of use and a wide range of available libraries. The pandas library, for example, is one of the most important for data manipulation and exploratory analysis, while the scikit-learn library is used for machine learning and statistical modeling.</p>
+</section>
+<section id="jupyter-notebook">
+<h3>Jupyter Notebook<a class="headerlink" href="#jupyter-notebook" title="Link permanente para este cabeçalho"></a></h3>
+<p>Programming in a Read-Eval-Print Loop (REPL) is an interactive programming technique that is widely used in data science. It allows users to write and execute code incrementally, enabling quick and easy evaluation of results. Tools like <a class="reference external" href="https://jupyter.org/">Jupyter Notebook</a> allow REPL programming to be used with additional features such as visualization of plots and exporting files in different formats.</p>
+</section>
+<section id="virtual-environments">
+<h3>Virtual environments<a class="headerlink" href="#virtual-environments" title="Link permanente para este cabeçalho"></a></h3>
+<p>Managing dependencies in a Python application can be complicated and can lead to conflicts between different libraries. To solve this problem, it is common to use virtual environments (often through the <a class="reference external" href="https://docs.python.org/3/library/venv.html">venv</a> library), which allows for the installation and management of Python packages in an isolated environment from the operating system. This avoids conflicts between package versions and enables result reproducibility across different machines.</p>
+</section>
+<section id="docker">
+<h3>Docker<a class="headerlink" href="#docker" title="Link permanente para este cabeçalho"></a></h3>
+<p><a class="reference external" href="https://www.docker.com/">Docker</a> is a container platform that allows running applications in different environments. It is widely used in data science for dependency management and executing applications on different machines and operating systems. Using Docker for running a Jupyter Notebook can simplify the setup process and ensure compatibility between different libraries and dependencies.</p>
+</section>
+<section id="julia-and-r-programming-languages">
+<h3>Julia and R programming languages<a class="headerlink" href="#julia-and-r-programming-languages" title="Link permanente para este cabeçalho"></a></h3>
+<p>While Python is the most widely used language in data science, other languages like <a class="reference external" href="https://julialang.org/">Julia</a> and <a class="reference external" href="https://www.r-project.org/">R</a> are also commonly used. Fortunately, Jupyter Notebook is compatible with these languages and allows for executing code and visualizations within a single interactive environment. This enables users to choose the most suitable language for the specific problem without the need to switch environments or platforms.</p>
+</section>
+</section>
+<section id="container">
+<h2>Container<a class="headerlink" href="#container" title="Link permanente para este cabeçalho"></a></h2>
+<section id="image">
+<h3>Image<a class="headerlink" href="#image" title="Link permanente para este cabeçalho"></a></h3>
+<p>An easy way to run a Jupyter Notebook with Docker is by using the <a class="reference external" href="https://hub.docker.com/r/jupyter/datascience-notebook">jupyter/datascience-notebook</a> Docker image, which comes pre-configured with Jupyter Notebook and major data science libraries. This image can be downloaded directly from the <a class="reference external" href="https://hub.docker.com/">Docker Hub</a> and run in a container that exposes the Jupyter server to be accessed through a web browser.</p>
+</section>
+<section id="local-files">
+<h3>Local files<a class="headerlink" href="#local-files" title="Link permanente para este cabeçalho"></a></h3>
+<p>One advantage of using Docker is the ability to mount a local directory inside the container, allowing access to local files and persistence of data generated by the notebook. This can be done using the “-v” option when running the container, specifying the local directory to be mounted and the directory inside the container where it should be mounted.</p>
+</section>
+<section id="dependencies">
+<h3>Dependencies<a class="headerlink" href="#dependencies" title="Link permanente para este cabeçalho"></a></h3>
+<p>To automate the dependency management process, you can create a new Docker image from the ‘jupyter/datascience-notebook’ image using a <a class="reference external" href="https://docs.docker.com/engine/reference/builder/">Dockerfile</a>. In this file, you can copy a requirements file containing the necessary dependencies and install those dependencies using pip. After building this custom image, you can run it in a container that will already have all the required dependencies installed. This makes the configuration and library installation process much easier and automated.</p>
+</section>
+</section>
+<section id="example">
+<h2>Example<a class="headerlink" href="#example" title="Link permanente para este cabeçalho"></a></h2>
+<p>To illustrate the use of Docker for running a Jupyter Notebook, in this tutorial, we will create a sample project that utilizes the pandas library for data analysis.</p>
+<section id="directory-structure">
+<h3>Directory structure<a class="headerlink" href="#directory-structure" title="Link permanente para este cabeçalho"></a></h3>
+<p>The directory structure of the project will be as follows:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>example_project/
+├── Dockerfile
+├── notebooks/
+│   └── example_notebook.ipynb
+└── requirements.txt
+</pre></div>
+</div>
+<p>The file <code class="docutils literal notranslate"><span class="pre">example_notebook.ipynb</span></code> contains the code for the Jupyter Notebook. The file <code class="docutils literal notranslate"><span class="pre">requirements.txt</span></code> lists the dependencies required to run the notebook.</p>
+</section>
+<section id="id3">
+<h3>Dockerfile<a class="headerlink" href="#id3" title="Link permanente para este cabeçalho"></a></h3>
+<p>The Dockerfile for creating a custom image based on the ‘jupyter/datascience-notebook’ image would be as follows:</p>
+<div class="highlight-Dockerfile notranslate"><div class="highlight"><pre><span></span><span class="k">FROM</span><span class="w"> </span><span class="s">jupyter/datascience-notebook</span>
+
+<span class="k">COPY</span><span class="w"> </span>requirements.txt<span class="w"> </span>/tmp/
+<span class="k">RUN</span><span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>--upgrade<span class="w"> </span>pip<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>pip<span class="w"> </span>isntall<span class="w"> </span>--requirement<span class="w"> </span>/tmp/requirements.txt
+
+<span class="k">WORKDIR</span><span class="w"> </span><span class="s">/home/jovyan/work/</span>
+</pre></div>
+</div>
+<p>In this Dockerfile, we are copying the requirements file to the <code class="docutils literal notranslate"><span class="pre">/tmp/</span></code> directory and installing the dependencies using <strong>pip</strong>. Then, we set the default directory for the Jupyter Notebook to <code class="docutils literal notranslate"><span class="pre">/home/jovyan/work/</span></code>.</p>
+</section>
+<section id="image-creation">
+<h3>Image creation<a class="headerlink" href="#image-creation" title="Link permanente para este cabeçalho"></a></h3>
+<p>To create a custom image from the Dockerfile, you need to use the <code class="docutils literal notranslate"><span class="pre">docker</span> <span class="pre">build</span></code> command. The command should be executed in the directory where the Dockerfile is located, along with the build context that contains the necessary files to build the image.</p>
+<p>The command to create the custom image from the Dockerfile in our example would be as follows:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>docker<span class="w"> </span>build<span class="w"> </span>--tag<span class="w"> </span>jupyter-example<span class="w"> </span>.
+</pre></div>
+</div>
+</section>
+<section id="container-execution">
+<h3>Container execution<a class="headerlink" href="#container-execution" title="Link permanente para este cabeçalho"></a></h3>
+<p>After building the image, we can run it in a container using the following <code class="docutils literal notranslate"><span class="pre">docker</span></code> run command:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>docker<span class="w"> </span>run<span class="w"> </span>-it<span class="w"> </span>--rm<span class="w"> </span>-p<span class="w"> </span><span class="m">8888</span>:8888<span class="w"> </span>-v<span class="w"> </span><span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span>/notebooks:/home/jovyan/work/<span class="w"> </span>jupyter-example
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>In the default configuration, the container runs with the user <strong>jovyan</strong>, which prevents the execution of commands with superuser privileges (as the user password is required). To run such commands, you need to create a user and disable the requirement for providing a password when executing commands with <strong>sudo</strong>.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>docker<span class="w"> </span>run<span class="w"> </span>-it<span class="w"> </span>--rm<span class="w">  </span><span class="se">\</span>
+-p<span class="w"> </span><span class="m">8888</span>:8888<span class="w"> </span><span class="se">\</span>
+--user<span class="w"> </span>root<span class="w"> </span><span class="se">\</span>
+-e<span class="w"> </span><span class="nv">NB_USER</span><span class="o">=</span><span class="s2">&quot;myuser&quot;</span><span class="w"> </span><span class="se">\</span>
+-e<span class="w"> </span><span class="nv">CHOWN_HOME</span><span class="o">=</span>yes<span class="w"> </span><span class="se">\</span>
+-e<span class="w"> </span><span class="nv">GRANT_SUDO</span><span class="o">=</span>yes<span class="w"> </span><span class="se">\</span>
+-w<span class="w"> </span><span class="s2">&quot;/home/</span><span class="si">${</span><span class="nv">NB_USER</span><span class="si">}</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
+-v<span class="w"> </span><span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span>/notebooks:/home/myuser<span class="w"> </span><span class="se">\</span>
+jupyter-example
+</pre></div>
+</div>
+</div>
+<p>This command runs the container from the custom image, maps the Jupyter server port on the host to port <code class="docutils literal notranslate"><span class="pre">8888</span></code> in the container, and mounts the local notebook directory to the default Jupyter Notebook directory inside the container.</p>
+<p>With this setup, you can access the notebook through your browser using the URL provided by Docker in the terminal and start working with data using the pandas library.</p>
+</section>
+</section>
+<section id="concluding-remarks">
+<h2>Concluding Remarks<a class="headerlink" href="#concluding-remarks" title="Link permanente para este cabeçalho"></a></h2>
+<p>In this tutorial, we have seen how to use Docker to simplify the management of dependencies and execution of a Jupyter Notebook in a data science project. By using a custom image based on the <strong>jupyter/datascience-notebook</strong> image, we can automate the process of installing libraries and configuring the working environment.</p>
+<p>Furthermore, we have demonstrated how to create a custom image with installed dependencies and how to use Docker to run a container and edit local files directly in Jupyter Notebook.</p>
+<p>I hope this hands-on tutorial has been helpful and can contribute to the productivity of those working with data science in Python. Both Jupyter Notebook and Docker are powerful tools for creating more efficient and accurate data analysis solutions.</p>
+</section>
+</section>
+
+<div class="section ablog__blog_comments">
+  
+  
+
+
+<div class="section ablog__prev-next">
+  <span class="ablog__prev">
+    
+    
+    Anterior:
+    
+    <a href="index.html">
+      
+      <span>Executando Jupyter Notebook com Docker</span>
+    </a>
+    
+  </span>
+  <span class="ablog__spacer">&nbsp;</span>
+  <span class="ablog__next">
+    
+    
+    Próximo:
+    
+    <a href="../2023-03-20-livros-formatos-estudo/index.html">
+      <span>Fontes de Material de Estudo para Ciência de Dados</span>
+      
+    </a>
+    
+  </span>
+</div>
+
+  
+  
+</div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Bernardo Paulsen.</p>
+  </div>
+
+  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

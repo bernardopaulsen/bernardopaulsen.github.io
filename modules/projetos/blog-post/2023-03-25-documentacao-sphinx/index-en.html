@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt-BR" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Using Sphinx for generating documentation for Python software &mdash; documentação Bernardo Paulsen 0.0.0</title>
+      <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../../_static/jquery.js"></script>
+        <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
+        <script src="../../../../_static/doctools.js"></script>
+        <script src="../../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../../_static/translations.js"></script>
+    <script src="../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../../../../genindex.html" />
+    <link rel="search" title="Buscar" href="../../../../search.html" />
+ 
+
+
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../../index.html" class="icon icon-home">
+            Bernardo Paulsen
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Pesquisar documentos" aria-label="Pesquisar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <p class="caption" role="heading"><span class="caption-text">Sobre Mim (pt-BR):</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../experiencias/profissional.html">Experiência Profissional</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../experiencias/formacao.html">Formação Acadêmica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../experiencias/pesquisa.html">Pesquisa</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Projetos (pt-br):</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../open-source.html">Bibliotecas de Código Aberto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../blog.html">Dados: Apenas o Começo</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Serviços (pt-br):</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../servicos/consultoria.html">Consultoria</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../servicos/treinamento.html">Treinamento</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">About Me (en)</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../experiencias/profissional-en.html">Professional Experience</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../experiencias/formacao-en.html">Academic Background</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../experiencias/pesquisa-en.html">Research</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Projects (en):</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../open-source-en.html">Open-Source Libraries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../blog-en.html">Data: Just the Beginning</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">Bernardo Paulsen</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Navegação da página">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Using Sphinx for generating documentation for Python software</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../../_sources/modules/projetos/blog-post/2023-03-25-documentacao-sphinx/index-en.rst.txt" rel="nofollow"> Ver código-fonte da página</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+<style>
+.my-box {
+border: 1px solid #ddd;
+border-radius: 6px;
+padding: 10px;
+margin-bottom: 10px
+}
+</style><section id="using-sphinx-for-generating-documentation-for-python-software">
+<h1>Using Sphinx for generating documentation for Python software<a class="headerlink" href="#using-sphinx-for-generating-documentation-for-python-software" title="Link permanente para este cabeçalho"></a></h1>
+<p>Documentation is an essential aspect of any software project. It serves as a source of information for end users and as a resource for developers who need to understand how the software works. Additionally, well-written documentation helps avoid maintenance issues in the future (i.e., avoiding technical debt) and improves the overall quality of the software.</p>
+<p>In this article, I provide a practical example of how to create documentation (section <a class="reference internal" href="#example"><span class="std std-ref">Example</span></a>). I use <a class="reference external" href="https://www.sphinx-doc.org/en/master/">Sphinx</a> as the main tool for generating documentation and the <a class="reference external" href="https://readthedocs.org/">Read the Docs</a> repository for publishing it.</p>
+<p>I demonstrate how to use the <a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/extensions/autodoc.html">autodoc</a> extension to enable automatic creation of the API, which extracts information from the code’s docstring automatically (section <a class="reference internal" href="#automatic-api-creation"><span class="std std-ref">Automatic API Creation</span></a>). To change the default theme to one that offers a more visually pleasing appearance, I use the <a class="reference external" href="https://pypi.org/project/sphinx-rtd-theme/">sphinx_rtd_theme</a> extension (section <a class="reference internal" href="#defining-documentation-theme"><span class="std std-ref">Defining the Documentation Theme</span></a>). I also show how to publish the created documentation on <a class="reference external" href="https://readthedocs.org/">Read the Docs</a> (section <a class="reference internal" href="#publishing-read-the-docs"><span class="std std-ref">Publishing on Read the Docs</span></a>), allowing users to easily access the documentation through the web.</p>
+<p>Additionally, I mention several Sphinx extensions (section <a class="reference internal" href="#other-sphinx-features"><span class="std std-ref">Other Sphinx Features</span></a>), both those included by default in Sphinx and others created by third parties and available on <a class="reference external" href="https://pypi.org/">PyPI</a>. These extensions provide extra functionality for the documentation, making it more versatile and useful for different types of projects.</p>
+<section id="sphinx-and-read-the-docs">
+<h2>Sphinx and Read the Docs<a class="headerlink" href="#sphinx-and-read-the-docs" title="Link permanente para este cabeçalho"></a></h2>
+<section id="sphinx">
+<h3>Sphinx<a class="headerlink" href="#sphinx" title="Link permanente para este cabeçalho"></a></h3>
+<p>One of the most popular tools for creating documentation in Python projects is the <a class="reference external" href="https://www.sphinx-doc.org/en/master/">Sphinx</a> library. Sphinx is an open-source documentation tool that is easy to use and highly configurable. It uses the <a class="reference external" href="https://www.sphinx-doc.org/pt_BR/master/usage/restructuredtext/basics.html">ReStructuredText</a> (or RST) markup format, which is a lightweight and easy-to-learn markup language, to create the documentation.</p>
+<p>One of the great advantages of Sphinx is its ability to automatically generate API documentation from the code’s own documentation. This means that by writing code documentation, the API reference can be automatically generated from that documentation, saving time and effort in creating the documentation.</p>
+<p>Another major advantage of Sphinx is its ability to generate documentation in various formats, such as HTML, PDF, and EPUB.</p>
+</section>
+<section id="read-the-docs">
+<h3>Read the Docs<a class="headerlink" href="#read-the-docs" title="Link permanente para este cabeçalho"></a></h3>
+<p>Sphinx can also be easily integrated with <a class="reference external" href="https://readthedocs.org/">Read the Docs</a>, an online documentation hosting service. The integration of Sphinx with Read the Docs allows the documentation to be easily published and accessible to all project users. Additionally, <a class="reference external" href="https://about.readthedocs.com/?ref=dotcom-homepage">Read the Docs for Business</a> allows private projects to use the platform, keeping the documentation private and secure.</p>
+</section>
+</section>
+<section id="structure-of-documentation">
+<h2>Structure of Documentation<a class="headerlink" href="#structure-of-documentation" title="Link permanente para este cabeçalho"></a></h2>
+<section id="basic-sections">
+<h3>Basic Sections<a class="headerlink" href="#basic-sections" title="Link permanente para este cabeçalho"></a></h3>
+<p>Documentation can include various sections, such as getting started, user guide, API, and development. I describe the information contained in each section below.</p>
+<ul class="simple">
+<li><p>Getting Started: An overview of the library, demonstrating how to quickly and efficiently use it.</p></li>
+<li><p>User Guide: More detailed usage examples, with step-by-step explanations for utilizing the library.</p></li>
+<li><p>API: Detailed descriptions of the different functionalities and methods of the library.</p></li>
+<li><p>Development: Information on contributing to the development of the library, including details on coding standards, code structure, and testing.</p></li>
+</ul>
+</section>
+<section id="business-information">
+<h3>Business Information<a class="headerlink" href="#business-information" title="Link permanente para este cabeçalho"></a></h3>
+<p>In the case of internal documentation for the team, it may be interesting to add sections that address business aspects of the team, such as project objectives, contributors, financial information, clients, planning and long-term goals, meeting history, and requirements documentation. The sections vary between projects, and it is up to the team to define the necessary information for the documentation, taking into account the unique aspects of each project.</p>
+</section>
+<section id="other-documentation-channels">
+<h3>Other Documentation Channels<a class="headerlink" href="#other-documentation-channels" title="Link permanente para este cabeçalho"></a></h3>
+<p>It is worth noting that while many project progress-related information needs to be documented, much of it is documented through management features included in code repositories, such as GitHub and GitLab. This information includes issues, release history, information related to each sprint and deliverable, and more.</p>
+</section>
+</section>
+<section id="example">
+<span id="id1"></span><h2>Example<a class="headerlink" href="#example" title="Link permanente para este cabeçalho"></a></h2>
+<p>In this example, I will use the <a class="reference external" href="https://test.pypi.org/project/log-decor/">log_decor</a> library (v1) - an open-source logging decorator library that I recently developed - to demonstrate how to use Sphinx, in conjunction with the online hosting service <a class="reference external" href="https://readthedocs.org/">Read the Docs</a>, to generate and publish the documentation for a Python application.</p>
+<p>In this text, I would like to share a practical example of how to use the Sphinx library together with the Read the Docs online documentation hosting service to create and publish the documentation for a Python library. For this purpose, we will use the <a class="reference external" href="https://test.pypi.org/project/log-decor/">log_decor</a> library, an open-source logging decorator library that I recently developed.</p>
+<p>Before following the example on this page, I suggest you explore the <a class="reference external" href="https://log-decor.readthedocs.io/en/latest/index.html">log_decor documentation on Read the Docs</a>. This will make it easier to understand the different points that will be covered.</p>
+<section id="project-structure">
+<h3>Project Structure<a class="headerlink" href="#project-structure" title="Link permanente para este cabeçalho"></a></h3>
+<p>The directory structure of the <strong>log_decor</strong> library consists of several files and folders that are important for the development and documentation of the library. The structure and a brief description of each file and folder are presented below:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>log_decor/
+├── docs/
+├── src/
+│   └── log_decor/
+|       ├── __init__.py
+|       └── ...
+├── pyproject.toml
+└── requirements.txt
+</pre></div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">docs/</span></code> folder contains all the necessary files for creating the library’s documentation.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">src/log_decor/</span></code> folder contains all the source code files of the library. These files include the Python modules, as well as other files such as the <code class="docutils literal notranslate"><span class="pre">__init__.py</span></code> file, which indicates that the folder is a Python package.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">pyproject.toml</span></code> file is used for installing the library. This file contains important information such as the name of the library, its version, and its dependencies.</p>
+<p>Finally, the <code class="docutils literal notranslate"><span class="pre">requirements.txt</span></code> file in the project root lists the requirements necessary for the library to function.</p>
+</section>
+<section id="creating-the-base-documentation-files">
+<h3>Creating the Base Documentation Files<a class="headerlink" href="#creating-the-base-documentation-files" title="Link permanente para este cabeçalho"></a></h3>
+<p>To create the base documentation files, simply execute the command</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sphinx</span><span class="o">-</span><span class="n">quickstart</span>
+</pre></div>
+</div>
+<p>in the <code class="docutils literal notranslate"><span class="pre">example_project/docs/</span></code> directory. During the execution, the user is guided through a series of questions, such as the project name, the language used, the authors, and the version, among other options. These options are important to configure the documentation according to the project’s needs.</p>
+<p>When running the <code class="docutils literal notranslate"><span class="pre">sphinx-quickstart</span></code> command to create the library’s documentation, some default files and folders are generated. These files are:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">conf.py</span></code>: the main configuration file for Sphinx, where general documentation settings are defined, such as the title, description, list of extensions, and other customization options.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">index.rst</span></code>: the main documentation file where the main topics are defined, such as the introduction, installation, and usage of the library. From this file, other documentation files are created.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">make.bat</span></code> (for Windows) and <code class="docutils literal notranslate"><span class="pre">Makefile</span></code> (for Unix-based systems): script files used to compile the <code class="docutils literal notranslate"><span class="pre">.rst</span></code> files into HTML, PDF, and other formats.</p></li>
+</ul>
+<p>After executing the command, the directory structure becomes as follows:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>log_decor/
+├── docs/
+|   ├── conf.py  # new
+|   ├── index.rst  # new
+|   ├── make.bat  # new
+|   └── Makefile  # new
+├── src/
+│   └── log_decor/
+|       ├── __init__.py
+|       └── ...
+├── pyproject.toml
+└── requirements.txt
+</pre></div>
+</div>
+</section>
+<section id="adding-content-files">
+<h3>Adding Content Files<a class="headerlink" href="#adding-content-files" title="Link permanente para este cabeçalho"></a></h3>
+<p>It is possible to write the documentation using multiple <code class="docutils literal notranslate"><span class="pre">.rst</span></code> files. In fact, it is a good practice to divide the documentation into different files, each with a specific focus, making it easier to navigate and read the content.</p>
+<p>In the case of the example we are working on, we added several files in the <code class="docutils literal notranslate"><span class="pre">docs/modules/</span></code> folder that correspond to different sections of the documentation, which are displayed on different pages. Each file contains specific information about the subject covered in that section, allowing the reader to easily find what they are looking for.</p>
+<p>The directory structure with the new files is as follows:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>log_decor/
+├── docs/
+|   ├── modules/  # new
+|   |   ├── api.rst
+|   |   ├── contributing.rst
+|   |   ├── examples.rst
+|   |   ├── license.rst
+|   |   └── usage.rst
+|   ├── conf.py
+|   ├── index.rst
+|   ├── make.bat
+|   └── Makefile
+├── src/
+│   └── log_decor/
+|       ├── __init__.py
+|       └── ...
+├── pyproject.toml
+└── requirements.txt
+</pre></div>
+</div>
+</section>
+<section id="writing-the-documentation-s-home-page">
+<h3>Writing the documentation’s home page<a class="headerlink" href="#writing-the-documentation-s-home-page" title="Link permanente para este cabeçalho"></a></h3>
+<p>The <code class="docutils literal notranslate"><span class="pre">index.rst</span></code> file is the main file of the documentation, where we define the basic structure and organization of the topics to be covered. It is responsible for importing the other <code class="docutils literal notranslate"><span class="pre">.rst</span></code> files that will compose the documentation, organizing them in a way that facilitates user navigation.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">index.rst</span></code> serves as the home page of the documentation, as it is the first file the user accesses when opening the documentation. It is common to include a brief introduction of the project and a list of the topics that will be covered, so that the user can get a general idea of what they will find when browsing through the documentation.</p>
+<p>Additionally, the <code class="docutils literal notranslate"><span class="pre">index.rst</span></code> can be used to include important information about the project, such as its license, credits to authors and contributors, links to the official project page, among other relevant information. All of this contributes to making the documentation more comprehensive and informative for users.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">index.rst</span></code> file of the <strong>log_decor</strong> library is as follows:</p>
+<div class="highlight-restructuredtext notranslate"><div class="highlight"><pre><span></span><span class="gh">Welcome to log-decor&#39;s documentation!</span>
+<span class="gh">=====================================</span>
+
+<span class="gh">Introduction</span>
+<span class="gh">############</span>
+
+This package has class and method decorators that provide logging functionality.
+
+<span class="gh">Getting Started</span>
+<span class="gh">###############</span>
+
+To install, execute the following command:
+
+<span class="p">..</span> <span class="ow">code-block</span><span class="p">::</span>
+
+   pip install git+https://github.com/bernardopaulsen/log_decor.git
+
+
+<span class="p">..</span> <span class="ow">toctree</span><span class="p">::</span>
+   <span class="nc">:caption:</span> Contents
+
+   modules/usage
+   modules/examples
+   modules/api
+   modules/contributing
+   modules/license
+
+
+<span class="gh">Indices and tables</span>
+<span class="gh">==================</span>
+
+<span class="m">*</span> <span class="na">:ref:</span><span class="nv">`genindex`</span>
+<span class="m">*</span> <span class="na">:ref:</span><span class="nv">`modindex`</span>
+<span class="m">*</span> <span class="na">:ref:</span><span class="nv">`search`</span>
+</pre></div>
+</div>
+<p>The different elements of the above file are:</p>
+<ul class="simple">
+<li><p>‘Welcome to log-decor’s documentation!’: Title of the homepage.</p></li>
+<li><p>‘Introduction’: Section where a brief introduction about the library is presented, highlighting its main functionality.</p></li>
+<li><p>‘Getting Started’: Section that provides the necessary information for users to start using the library. It includes an installation command using <strong>pip</strong> and a link to the GitHub repository.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">toctree::</span></code>: The command is used to create a table of contents for the generated documentation. It allows the user to list other <code class="docutils literal notranslate"><span class="pre">.rst</span></code> files that will be displayed in the table of contents.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">:caption:</span> <span class="pre">Contents</span></code>: Title that will be used for the table of contents.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">modules/usage</span></code>, <code class="docutils literal notranslate"><span class="pre">modules/examples</span></code>, <code class="docutils literal notranslate"><span class="pre">modules/contributing</span></code>, <code class="docutils literal notranslate"><span class="pre">modules/license</span></code>: Links to the <code class="docutils literal notranslate"><span class="pre">.rst</span></code> files that will be included in the table of contents.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Indices</span> <span class="pre">and</span> <span class="pre">tables</span></code>: Section that presents indexes and tables related to the documentation.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">:ref:genindex</span></code>: Link to the general index, which contains information about all documented modules, classes, and functions.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">:ref:modindex</span></code>: Link to the module index, which contains information about all documented modules.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">:ref:search</span></code>: Link to the search table, which allows users to search for any keyword in the documentation.</p></li>
+</ul>
+<p>You can check the final result of this configuration below:</p>
+<embed>
+<div class="my-box">
+<section id="welcome-to-log-decor-s-documentation">
+<h1>Welcome to log-decor’s documentation!<a class="headerlink" href="#welcome-to-log-decor-s-documentation" title="Permalink to this heading">¶</a></h1>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">¶</a></h2>
+<p>This package has class and method decorators that provide logging functionality.</p>
+</section>
+<section id="getting-started">
+<h2>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this heading">¶</a></h2>
+<p>To install, execute the following command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">git</span><span class="o">+</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">bernardopaulsen</span><span class="o">/</span><span class="n">log_decor</span><span class="o">.</span><span class="n">git</span>
+</pre></div>
+</div>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="modules/usage.html">Usage</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="modules/usage.html#add-logger-to-class">Add logger to class</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules/usage.html#add-logging-functionality-to-method">Add logging functionality to method</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules/usage.html#define-logging-configuration">Define logging configuration</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="modules/examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules/api.html">API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="modules/api.html#add_logger.AddLogger"><code class="docutils literal notranslate"><span class="pre">AddLogger</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="modules/api.html#add_logger.AddLogger.__call__"><code class="docutils literal notranslate"><span class="pre">AddLogger.__call__()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="modules/api.html#log_info.LogInfo"><code class="docutils literal notranslate"><span class="pre">LogInfo</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="modules/api.html#log_info.LogInfo.__call__"><code class="docutils literal notranslate"><span class="pre">LogInfo.__call__()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="modules/api.html#log_method.LogMethod"><code class="docutils literal notranslate"><span class="pre">LogMethod</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="modules/api.html#log_method.LogMethod.__call__"><code class="docutils literal notranslate"><span class="pre">LogMethod.__call__()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="modules/api.html#log_msg.LogMsg"><code class="docutils literal notranslate"><span class="pre">LogMsg</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="modules/api.html#log_msg.LogMsg.__call__"><code class="docutils literal notranslate"><span class="pre">LogMsg.__call__()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="modules/contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules/license.html">License</a></li>
+</ul>
+</div>
+</section>
+</section>
+<section id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this heading">¶</a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+</section>
+</div>
+</embed><p>Note that the contents of the table of contents depend on the contents of each of the included <code class="docutils literal notranslate"><span class="pre">.rst</span></code> files in the table.</p>
+</section>
+<section id="automatic-api-creation">
+<span id="id2"></span><h3>Automatic API Creation<a class="headerlink" href="#automatic-api-creation" title="Link permanente para este cabeçalho"></a></h3>
+<p>The Sphinx <a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/extensions/autodoc.html">autodoc</a> extension allows documentation to be automatically generated from the library’s source code. In our example, we are using this extension in conjunction with the <a class="reference external" href="https://pypi.org/project/sphinx-autodoc-typehints/">sphinx_autodoc_typehints</a> library (which adds support for automatically documenting argument types and return values of functions and methods) to automatically document classes and functions from our source code.</p>
+<p>To configure the use of <strong>autodoc</strong> and <strong>sphinx-autodoc-typehints</strong>, they need to be included in the list of extensions in the <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> file. Additionally, various options can be configured for the extensions, such as including private members, documenting attributes, and more.</p>
+<section id="documentation-written-in-the-source-code">
+<h4>Documentation written in the source code<a class="headerlink" href="#documentation-written-in-the-source-code" title="Link permanente para este cabeçalho"></a></h4>
+<p>There are several ways to document the source code, all described in the <a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/extensions/autodoc.html">autodoc</a> documentation. One of these ways is through <em>docstrings</em>, which are triple-quoted strings placed immediately after the definition of a function, method, class, or module. The <em>docstrings</em> can be read by the Sphinx <strong>autodoc</strong> extension and used to generate the documentation.</p>
+<p>The following example is the <code class="docutils literal notranslate"><span class="pre">add_logger.py</span></code> module from the <strong>log_decor</strong> library:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># add_logger.py</span>
+
+<span class="kn">import</span> <span class="nn">functools</span>
+<span class="kn">import</span> <span class="nn">logging</span>
+<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Optional</span><span class="p">,</span> <span class="n">Type</span><span class="p">,</span> <span class="n">TypeVar</span>
+
+
+<span class="n">Class</span> <span class="o">=</span> <span class="n">TypeVar</span><span class="p">(</span><span class="s1">&#39;Class&#39;</span><span class="p">)</span>
+
+
+<span class="k">class</span> <span class="nc">AddLogger</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Class decorator that adds a logger attribute to the decorated class.</span>
+
+<span class="sd">    :param name: Name of Logger. If None, the qualified name of the class</span>
+<span class="sd">        passed to :meth:`add_logger.AddLogger.__call__` will be the name of</span>
+<span class="sd">        the logger.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span>
+                <span class="n">name</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
+                <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_name</span> <span class="o">=</span> <span class="n">name</span>
+
+    <span class="k">def</span> <span class="fm">__call__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span>
+                <span class="bp">cls</span><span class="p">:</span> <span class="n">Class</span>
+                <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Type</span><span class="p">[</span><span class="n">Class</span><span class="p">]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Add logger attribute to class.</span>
+
+<span class="sd">        The name of the attribute will be &#39;_logger&#39;.</span>
+
+<span class="sd">        :param cls: Class to which add logger. If no name was passed to</span>
+<span class="sd">            :meth:`add_logger.AddLogger.__init__`, the qualified name of the</span>
+<span class="sd">            class passed to this parameter will be the name of the logger.</span>
+<span class="sd">        :return: Class with logger attribute.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="nd">@functools</span><span class="o">.</span><span class="n">wraps</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span>
+                        <span class="n">updated</span><span class="o">=</span><span class="p">())</span>
+        <span class="k">class</span> <span class="nc">LoggedClass</span><span class="p">(</span><span class="bp">cls</span><span class="p">):</span>
+            <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="n">self_</span><span class="p">,</span>
+                        <span class="o">*</span><span class="n">args</span><span class="p">,</span>
+                        <span class="o">**</span><span class="n">kwargs</span>
+                        <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">self_</span><span class="o">.</span><span class="n">logger</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span>
+                    <span class="n">name</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_name</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_name</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="k">else</span> <span class="bp">cls</span><span class="o">.</span><span class="vm">__name__</span>
+                <span class="p">)</span>
+                <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span>
+                                <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">LoggedClass</span>
+</pre></div>
+</div>
+<p>The <em>docstring</em> begins with a brief description of the object’s function it is written for. Then, it provides descriptions of the object’s parameters, and finally a description of the object’s return value. It’s worth noting that the descriptions of the parameters for the <code class="docutils literal notranslate"><span class="pre">__init__</span></code> method are written in the class’s <em>docstring</em>, not in the method’s <em>docstring</em>.</p>
+<p><em>Docstrings</em> can contain more information than just the simple description of the object and its parameters and return value. It is good practice to include usage examples of the object, examples of the relationship between arguments and return values, and other relevant information that can help the reader better understand how to use the documented object.</p>
+<p>It is worth noting that the parameter types and return value types are not documented in the example’s <em>docstrings</em>, but that is because the types are already documented in the code itself, and they will be read by the <strong>sphinx_autodoc_typehints</strong> extension and automatically added to the final documentation.</p>
+</section>
+<section id="setting-up-the-source-code-directory">
+<h4>Setting up the source code directory<a class="headerlink" href="#setting-up-the-source-code-directory" title="Link permanente para este cabeçalho"></a></h4>
+<p>First, it is necessary to indicate the base directory of the library’s source code by configuring the <code class="docutils literal notranslate"><span class="pre">sys.path</span></code> variable in the <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> file. For example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># -- Path setup</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+
+<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="s1">&#39;../src/log_decor&#39;</span><span class="p">))</span>
+</pre></div>
+</div>
+</section>
+<section id="defining-the-extensions">
+<h4>Defining the extensions<a class="headerlink" href="#defining-the-extensions" title="Link permanente para este cabeçalho"></a></h4>
+<p>To add the <strong>autodoc</strong> and <strong>sphinx_autodoc_typehints</strong> extensions, they need to be added to the <code class="docutils literal notranslate"><span class="pre">extensions</span></code> list in the <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> file. For example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># -- General configuration</span>
+<span class="n">extensions</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s1">&#39;sphinx.ext.autodoc&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;sphinx_autodoc_typehints&#39;</span><span class="p">,</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+</section>
+<section id="adding-automatic-documentation-of-a-class-to-a-rst-file">
+<h4>Adding automatic documentation of a class to a .rst file<a class="headerlink" href="#adding-automatic-documentation-of-a-class-to-a-rst-file" title="Link permanente para este cabeçalho"></a></h4>
+<p>To add the API documentation of a class to a <code class="docutils literal notranslate"><span class="pre">.rst</span></code> file, we can use the <code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">autoclass::</span></code> directive. For example, to add the documentation of the <code class="docutils literal notranslate"><span class="pre">AddLogger</span></code> class from the <code class="docutils literal notranslate"><span class="pre">add_logger</span></code> module, we can use the following code:</p>
+<div class="highlight-restructuredtext notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">autoclass</span><span class="p">::</span> add_logger.AddLogger
+   <span class="nc">:members:</span>
+   <span class="nc">:special-members:</span> __call__
+</pre></div>
+</div>
+<p>In the RST code above, the <code class="docutils literal notranslate"><span class="pre">autoclass</span></code> directive indicates that we are automatically documenting a class using the <strong>autodoc</strong> extension. The <code class="docutils literal notranslate"><span class="pre">add_logger.AddLogger</span></code> argument indicates the class we are documenting. The <code class="docutils literal notranslate"><span class="pre">:members:</span></code> option indicates that we want to document all members of the class, and the <code class="docutils literal notranslate"><span class="pre">:special-members:</span> <span class="pre">__call__</span></code> option indicates that we also want to document the special method <code class="docutils literal notranslate"><span class="pre">__call__</span></code>, which is not documented by default by <strong>autodoc</strong> because it is a special method.</p>
+<p>Below you can check the same result:</p>
+<embed>
+<div class="my-box">
+<dt class="sig sig-object py" id="add_logger.AddLogger">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">add_logger.</span></span><span class="sig-name descname"><span class="pre">AddLogger</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#add_logger.AddLogger" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class decorator that adds a logger attribute to the decorated class.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>name</strong> (<code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]) – Name of Logger. If None, the qualified name of the class
+passed to <a class="reference internal" href="#add_logger.AddLogger.__call__" title="add_logger.AddLogger.__call__"><code class="xref py py-meth docutils literal notranslate"><span class="pre">add_logger.AddLogger.__call__()</span></code></a> will be the name of
+the logger.</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="add_logger.AddLogger.__call__">
+<span class="sig-name descname"><span class="pre">__call__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cls</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#add_logger.AddLogger.__call__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add logger attribute to class.</p>
+<p>The name of the attribute will be ‘_logger’.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>cls</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">Class</span></code>)) – Class to which add logger. If no name was passed to
+<code class="xref py py-meth docutils literal notranslate"><span class="pre">add_logger.AddLogger.__init__()</span></code>, the qualified name of the
+class passed to this parameter will be the name of the logger.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Type</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">Class</span></code>)]</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Class with logger attribute.</p>
+</dd>
+</dl>
+</dd></dl>
+</dd>
+</div>
+</embed></section>
+</section>
+<section id="defining-the-documentation-theme">
+<span id="defining-documentation-theme"></span><h3>Defining the documentation theme<a class="headerlink" href="#defining-the-documentation-theme" title="Link permanente para este cabeçalho"></a></h3>
+<p>Sphinx allows you to choose themes to customize the appearance of the documentation. The default Sphinx theme is <strong>classic</strong>, but there are several other themes available, such as <strong>labaster</strong>, <strong>sphinx_rtd_theme</strong>, and <strong>sphinx_bootstrap_theme</strong>, among others.</p>
+<p>In the case of the <strong>log_decor</strong> library used as an example, the <a class="reference external" href="https://pypi.org/project/sphinx-rtd-theme/">sphinx_rtd_theme</a> theme was chosen, which is a popular and modern theme that offers a clean and professional look for the documentation.</p>
+<p>The code required to configure the <strong>sphinx_rtd_theme</strong> theme in the <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> file is as follows:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># -- Options for HTML output</span>
+<span class="kn">import</span> <span class="nn">sphinx_rtd_theme</span>
+
+<span class="n">html_theme</span> <span class="o">=</span> <span class="s1">&#39;sphinx_rtd_theme&#39;</span>
+<span class="n">html_theme_path</span> <span class="o">=</span> <span class="p">[</span><span class="n">sphinx_rtd_theme</span><span class="o">.</span><span class="n">get_html_theme_path</span><span class="p">()]</span>
+</pre></div>
+</div>
+</section>
+<section id="installation-of-required-libraries-in-the-development-environment">
+<h3>Installation of Required Libraries in the Development Environment<a class="headerlink" href="#installation-of-required-libraries-in-the-development-environment" title="Link permanente para este cabeçalho"></a></h3>
+<p>To create documentation with Sphinx, both Sphinx and the auxiliary libraries need to be installed in the development environment. The auxiliary libraries required for generating the documentation are usually specified in a <code class="docutils literal notranslate"><span class="pre">requirements.txt</span></code> file, which should be located in the <code class="docutils literal notranslate"><span class="pre">docs/</span></code> directory. The libraries imported by the source code should also be installed since we are using the <strong>autodoc</strong> extension, but they are specified in the <code class="docutils literal notranslate"><span class="pre">requirements.txt</span></code> file in the project’s root directory.</p>
+<p>The directory structure will be as follows:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>log_decor/
+├── docs/
+|   ├── modules/
+|   |   └── ...
+|   ├── conf.py
+|   ├── index.rst
+|   ├── make.bat
+|   ├── Makefile
+|   └── requirements.txt  # new
+├── src/
+│   └── log_decor/
+|       ├── __init__.py
+|       └── ...
+├── pyproject.toml
+└── requirements.txt
+</pre></div>
+</div>
+<p>The contents of the <code class="docutils literal notranslate"><span class="pre">requirements.txt</span></code> file will be:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sphinx</span>
+<span class="n">sphinx_rtd_theme</span>
+<span class="n">sphinx_autodoc_typehints</span>
+</pre></div>
+</div>
+<p>These packages can be installed with the command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="o">--</span><span class="n">requirement</span> <span class="n">docs</span><span class="o">/</span><span class="n">requirements</span><span class="o">.</span><span class="n">txt</span>
+</pre></div>
+</div>
+</section>
+<section id="generating-html-documentation">
+<h3>Generating HTML Documentation<a class="headerlink" href="#generating-html-documentation" title="Link permanente para este cabeçalho"></a></h3>
+<p>Inside the <code class="docutils literal notranslate"><span class="pre">docs/</span></code> folder, the command</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">make</span> <span class="n">html</span>
+</pre></div>
+</div>
+<p>is used to generate HTML documentation from the source files. The HTML files will be generated in the <code class="docutils literal notranslate"><span class="pre">docs/_build/html</span></code> directory by default. The documentation’s main page is in the <code class="docutils literal notranslate"><span class="pre">index.html</span></code> file, which should be opened to access the documentation.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>log_decor/
+├── docs/
+|   ├── _build/  # new
+|   |   ├── doctrees/
+|   |   └── html/
+|   |        ├── ...
+|   |        ├── index.html
+|   |        └── ...
+|   ├── modules/
+|   |   └── ...
+|   ├── conf.py
+|   ├── index.rst
+|   ├── make.bat
+|   ├── Makefile
+|   └── requirements.txt
+├── src/
+│   └── log_decor/
+|       ├── __init__.py
+|       └── ...
+├── pyproject.toml
+└── requirements.txt
+</pre></div>
+</div>
+<p>As mentioned earlier, the complete documentation can be accessed through the <a class="reference external" href="https://log-decor.readthedocs.io/en/latest/index.html">log_decor page on Read the Docs</a>.</p>
+<p>Sphinx also allows generating other types of documentation files, such as PDF and ePub. To generate a PDF file, for example, it is necessary to install LaTeX software and then use the command <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">latexpdf</span></code>. To generate an ePub file, the Calibre software needs to be installed, and the command <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">epub</span></code> should be used.</p>
+</section>
+<section id="publishing-on-read-the-docs">
+<span id="publishing-read-the-docs"></span><h3>Publishing on Read the Docs<a class="headerlink" href="#publishing-on-read-the-docs" title="Link permanente para este cabeçalho"></a></h3>
+<p>The integration between Sphinx, <a class="reference external" href="https://github.com/">GitHub</a>, and Read the Docs is extremely useful for creating and maintaining up-to-date documentation for software projects. By using Sphinx to generate documentation from the source code and GitHub to store the code, it is possible to automate the process of updating the documentation with each new project version. And with integration with Read the Docs, the documentation can be easily hosted and shared with the community.</p>
+<p>As mentioned earlier, the documentation for the <strong>log_decor</strong> project is available on Read the Docs at <a class="reference external" href="https://log-decor.readthedocs.io/en/latest/index.html">its page on the platform</a></p>
+<section id="configuration">
+<h4>Configuration<a class="headerlink" href="#configuration" title="Link permanente para este cabeçalho"></a></h4>
+<p>To integrate Sphinx with Read the Docs, it is necessary to configure a file called <code class="docutils literal notranslate"><span class="pre">readthedocs.yaml</span></code> in the project’s root directory. This file allows specifying the Python version used in the documentation, as well as other configurations. For example, it is possible to specify the commands to be executed before building the documentation and the extensions to be used.</p>
+<p>Below is the directory structure of the sample project after including the <code class="docutils literal notranslate"><span class="pre">readthedocs.yaml</span></code> file:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>log_decor/
+├── docs/
+|   └── ...
+├── src/
+│   └── log_decor/
+|       ├── __init__.py
+|       └── ...
+├── pyproject.toml
+├── readthedocs.yaml  # new
+└── requirements.txt
+</pre></div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">readthedocs.yaml</span></code> file is as follows:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="c1"># readthedocs.yaml</span>
+<span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
+
+<span class="nt">sphinx</span><span class="p">:</span>
+<span class="nt">builder</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">html</span>
+<span class="nt">configuration</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">docs/conf.py</span>
+<span class="nt">fail_on_warning</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+
+<span class="nt">python</span><span class="p">:</span>
+<span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3.8</span>
+<span class="nt">install</span><span class="p">:</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">requirements</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">docs/requirements.txt</span>
+<span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">extra_requirements</span><span class="p p-Indicator">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">requirements.txt</span>
+</pre></div>
+</div>
+<p>The file starts with the definition of the configuration file version, in this case, version 2.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">sphinx</span></code> section is used to specify the Sphinx configurations. In this case, the defined builder is <em>html</em>, the configuration file used is <code class="docutils literal notranslate"><span class="pre">docs/conf.py</span></code>, and <code class="docutils literal notranslate"><span class="pre">fail_on_warning</span></code> is set to <strong>true</strong>, which causes the documentation build process to fail if there are any warnings.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">python</span></code> section is used to define the Python version that will be used to build the documentation and the list of packages that will be installed before the build. In this case, it is defined that version 3.8 will be used and that the files <code class="docutils literal notranslate"><span class="pre">docs/requirements.txt</span></code> and <code class="docutils literal notranslate"><span class="pre">requirements.txt</span></code> will be used to install the necessary packages, with the former defining the packages used by Sphinx and the latter defining the packages used by the source code of the library.</p>
+</section>
+<section id="integration-with-read-the-docs">
+<h4>Integration with Read the Docs<a class="headerlink" href="#integration-with-read-the-docs" title="Link permanente para este cabeçalho"></a></h4>
+<p>Integrating <a class="reference external" href="https://readthedocs.org/">Read the Docs</a> with <a class="reference external" href="https://github.com/">GitHub</a> is straightforward and easy to set up. To create documentation on Read the Docs from a GitHub repository, simply create an account on Read the Docs, set up a new project, and link the project to the GitHub repository by selecting the repository and authorizing access. Once configured, Read the Docs will automatically monitor the GitHub repository for updates and generate a new version of the documentation whenever there is a new commit or pull request.</p>
+</section>
+<section id="accessing-the-documentation">
+<h4>Accessing the Documentation<a class="headerlink" href="#accessing-the-documentation" title="Link permanente para este cabeçalho"></a></h4>
+<p>Once the integration is set up and the documentation has been built, it can be accessed through the link provided by Read the Docs.</p>
+</section>
+</section>
+</section>
+<section id="other-sphinx-features">
+<span id="id3"></span><h2>Other Sphinx Features<a class="headerlink" href="#other-sphinx-features" title="Link permanente para este cabeçalho"></a></h2>
+<p>Sphinx offers many features beyond documentation generation. Some of these features can make the documentation even more useful and accessible.</p>
+<section id="restructuredtext">
+<h3>ReStructuredText<a class="headerlink" href="#restructuredtext" title="Link permanente para este cabeçalho"></a></h3>
+<p>The ReStructuredText markup format itself has several features not demonstrated in the above example.</p>
+<p>One of them is the <a class="reference external" href="https://docs.readthedocs.io/en/stable/guides/cross-referencing-with-sphinx.html">creation of links to sections and chapters of the documentation</a>, including links to source code objects. These links can be included in the code’s own docstrings, making the documentation even more interconnected and user-friendly.</p>
+<p>Another feature worth mentioning is the <a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#showing-code-examples">support for code blocks in the documentation</a> (including in docstrings), which allows usage examples of the library to be directly exposed in the documentation. This can be particularly useful in helping users understand how to use the library in their own projects.</p>
+</section>
+<section id="extensions">
+<h3>Extensions<a class="headerlink" href="#extensions" title="Link permanente para este cabeçalho"></a></h3>
+<p>In addition to the standard features, Sphinx also has several very useful extensions, both those included in the library and third-party extensions, which can further facilitate the documentation process and make the documentation richer and more comprehensive. Some of the included extensions in Sphinx are:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/extensions/doctest.html">doctest</a>: inclusion of unit tests within the documentation, making it more interactive and facilitating understanding of the library’s usage.</p></li>
+<li><p><a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/extensions/intersphinx.html">intersphinx</a>: inclusion of links to documentation of other libraries, facilitating access to the documentation of other tools.</p></li>
+<li><p><a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/extensions/viewcode.html">viewcode</a>: inclusion of links to the source code of documented classes, functions, and methods, making the documentation more comprehensive and allowing for a deeper understanding of how the library works.</p></li>
+</ul>
+<p>Some third-party extensions that can be easily installed and used with Sphinx and are available in the <a class="reference external" href="https://pypi.org/">PyPI</a> repository are:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://pypi.org/project/sphinxcontrib-jupyter/">sphinxcontrib-jupyter</a>: inclusion of Jupyter notebooks in the documentation, making it more interactive and allowing for the visualization of usage examples of the library in a more dynamic way. It is worth noting that this extension is developed by the <a class="reference external" href="https://quantecon.org/">QuantEcon organization</a>, which is an organization dedicated to economic modeling, providing libraries and educational materials on the subject, among other projects. I strongly recommend exploring the organization’s projects if you are interested in economic modeling and quantitative finance.</p></li>
+<li><p><a class="reference external" href="https://pypi.org/project/sphinxcontrib-bibtex/">sphinxcontrib-bibtex</a>: automatic inclusion of bibliographic citations in the documentation, facilitating reference to articles and scientific works related to the library.</p></li>
+</ul>
+</section>
+</section>
+<section id="conclusion">
+<h2>Conclusion<a class="headerlink" href="#conclusion" title="Link permanente para este cabeçalho"></a></h2>
+<p>In conclusion, documentation is a fundamental part of any software project, but unfortunately, it is often neglected by developers. Clear and well-written documentation not only helps to facilitate understanding of the project, but also eases the maintenance process and collaboration with other developers.</p>
+<p><a class="reference external" href="https://www.sphinx-doc.org/en/master/">Sphinx</a> is a powerful tool that makes documentation creation and maintenance much easier and efficient. Furthermore, integration with <a class="reference external" href="https://github.com/">GitHub</a> and <a class="reference external" href="https://readthedocs.org/">Read the Docs</a> enables simple and accessible sharing of the documentation with anyone interested in the project.</p>
+<p>I hope you have enjoyed the article and that it has been useful in improving the documentation of your software projects. Always remember that good documentation is essential for the success of any project!</p>
+</section>
+</section>
+
+<div class="section ablog__blog_comments">
+  
+  
+
+
+<div class="section ablog__prev-next">
+  <span class="ablog__prev">
+    
+    
+    Anterior:
+    
+    <a href="../2023-03-20-livros-formatos-estudo/index-en.html">
+      
+      <span>Sources of Study Material for Data Science</span>
+    </a>
+    
+  </span>
+  <span class="ablog__spacer">&nbsp;</span>
+  <span class="ablog__next">
+    
+    
+    Próximo:
+    
+    <a href="index.html">
+      <span>Utilizando Sphinx para a geração de documentação de softwares escritos em Python</span>
+      
+    </a>
+    
+  </span>
+</div>
+
+  
+  
+</div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Bernardo Paulsen.</p>
+  </div>
+
+  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt-BR" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Release of almgren_chriss 1.0 Python Package &mdash; documentação Bernardo Paulsen 0.0.0</title>
+      <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../../_static/jquery.js"></script>
+        <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
+        <script src="../../../../_static/doctools.js"></script>
+        <script src="../../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../../_static/translations.js"></script>
+    <script src="../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../../../../genindex.html" />
+    <link rel="search" title="Buscar" href="../../../../search.html" />
+ 
+
+
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../../index.html" class="icon icon-home">
+            Bernardo Paulsen
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Pesquisar documentos" aria-label="Pesquisar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <p class="caption" role="heading"><span class="caption-text">Sobre Mim (pt-BR):</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../experiencias/profissional.html">Experiência Profissional</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../experiencias/formacao.html">Formação Acadêmica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../experiencias/pesquisa.html">Pesquisa</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Projetos (pt-br):</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../open-source.html">Bibliotecas de Código Aberto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../blog.html">Dados: Apenas o Começo</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Serviços (pt-br):</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../servicos/consultoria.html">Consultoria</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../servicos/treinamento.html">Treinamento</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">About Me (en)</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../experiencias/profissional-en.html">Professional Experience</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../experiencias/formacao-en.html">Academic Background</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../experiencias/pesquisa-en.html">Research</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Projects (en):</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../open-source-en.html">Open-Source Libraries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../blog-en.html">Data: Just the Beginning</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">Bernardo Paulsen</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Navegação da página">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Release of almgren_chriss 1.0 Python Package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../../_sources/modules/projetos/blog-post/2023-05-28-almgren-chriss-1/index-en.rst.txt" rel="nofollow"> Ver código-fonte da página</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+<section id="release-of-almgren-chriss-1-0-python-package">
+<h1>Release of almgren_chriss 1.0 Python Package<a class="headerlink" href="#release-of-almgren-chriss-1-0-python-package" title="Link permanente para este cabeçalho"></a></h1>
+<p>I am thrilled to announce the release of the almgren_chriss 1.0 Python package!
+This package is designed to help financial analysts, researchers, and enthusiasts implement the Almgren-Chriss model
+for optimal execution of large orders. The model is described in the paper <a class="reference external" href="https://www.smallake.kr/wp-content/uploads/2016/03/optliq.pdf">Optimal Execution of Portfolio Transactions - Almgren &amp; Chriss (2000)</a>.</p>
+<section id="the-problem-of-optimal-execution-of-large-orders">
+<h2>The Problem of Optimal Execution of Large Orders<a class="headerlink" href="#the-problem-of-optimal-execution-of-large-orders" title="Link permanente para este cabeçalho"></a></h2>
+<p>In financial markets, executing large orders is a complex task. A large order can significantly impact the market,
+causing the price to move against the order, a phenomenon known as market impact. The challenge is to find an optimal
+trading strategy that minimizes the cost of trading while considering the risk associated with the price fluctuations.</p>
+</section>
+<section id="the-almgren-chriss-model">
+<h2>The Almgren-Chriss Model<a class="headerlink" href="#the-almgren-chriss-model" title="Link permanente para este cabeçalho"></a></h2>
+<p>The Almgren-Chriss model is a mathematical framework that addresses this problem.
+Named after Robert Almgren and Neil Chriss, who introduced it in 2000, the model is widely used in financial markets for
+its simplicity and effectiveness.</p>
+<p>The model assumes both temporary and permanent market impact.
+Temporary impact affects the price only for the duration of the trade, while permanent impact changes the price indefinitely.
+The model also assumes that the price follows a geometric Brownian motion with a constant volatility.</p>
+<p>The model considers several variables, including the risk tolerance of the trader, the volatility of the stock,
+the duration of the trading period, and the total number of shares to be traded.
+The model then determines the optimal trading strategy that minimizes the expected cost of trading and the risk
+associated with price fluctuations.</p>
+<p>The Almgren-Chriss model presents a trade-off between market impact and risk.
+Trading quickly can reduce the risk of price fluctuations but increases the market impact, while trading slowly
+reduces the market impact but exposes the trader to price risk.</p>
+</section>
+<section id="the-almgren-chriss-python-package">
+<h2>The almgren_chriss Python Package<a class="headerlink" href="#the-almgren-chriss-python-package" title="Link permanente para este cabeçalho"></a></h2>
+<p>The almgren_chriss Python package provides a practical implementation of the Almgren-Chriss model.
+It includes functions to calculate the expected cost and variance of the cost of trading, the trade decay rate, and the
+trading trajectory and list of trades. These functions can be used to analyze and optimize trading strategies.</p>
+<p>The package is available on the official PyPI repository, and the entire source code of the project is
+available on the GitHub repository. Also, the documentation is available on GitHub Pages.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://pypi.org/project/almgren-chriss/">almgren_chriss - PyPI</a></p></li>
+<li><p><a class="reference external" href="https://github.com/bernardopaulsen/almgren-chriss">almgren_chriss - Code</a></p></li>
+<li><p><a class="reference external" href="https://bernardopaulsen.github.io/almgren-chriss/">almgren_chriss - Documentation</a></p></li>
+</ul>
+</section>
+<section id="examples">
+<h2>Examples<a class="headerlink" href="#examples" title="Link permanente para este cabeçalho"></a></h2>
+<p>You can install the package using <strong>pip</strong>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">almgren_chriss</span>
+</pre></div>
+</div>
+<p>Here is an example of how to use the package to calculate the trading trajectory and list of trades:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">almgren_chriss</span> <span class="kn">import</span> <span class="n">trade_trajectory</span><span class="p">,</span> <span class="n">trade_list</span><span class="p">,</span> <span class="n">cost_expectation</span><span class="p">,</span> <span class="n">cost_variance</span>
+
+<span class="c1"># Risk tolerance, interval between trades, volatility, permanent impact slope, temporary impact slope, temporary impact intercept</span>
+<span class="n">lambda_</span><span class="p">,</span> <span class="n">tau</span><span class="p">,</span> <span class="n">sigma</span><span class="p">,</span> <span class="n">gamma</span><span class="p">,</span> <span class="n">eta</span><span class="p">,</span> <span class="n">epsilon</span> <span class="o">=</span> <span class="mf">2e-6</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mf">0.95</span><span class="p">,</span> <span class="mf">2.5e-7</span><span class="p">,</span> <span class="mf">2.5e-6</span><span class="p">,</span> <span class="mf">0.0625</span>
+<span class="c1"># Total number of shares, trading duration</span>
+<span class="n">X</span><span class="p">,</span> <span class="n">T</span> <span class="o">=</span> <span class="mf">1e06</span><span class="p">,</span> <span class="mf">5.0</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">trade_trajectory</span><span class="p">(</span><span class="n">lambda_</span><span class="p">,</span> <span class="n">tau</span><span class="p">,</span> <span class="n">sigma</span><span class="p">,</span> <span class="n">gamma</span><span class="p">,</span> <span class="n">eta</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">T</span><span class="p">)</span>
+<span class="go">array([1000000.0, 428598.84574702, 182932.81426177, 76295.72161546, 27643.37739691, 0.0])</span>
+</pre></div>
+</div>
+<img alt="../../../../_images/trade_trajectory.png" src="../../../../_images/trade_trajectory.png" />
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">trade_list</span><span class="p">(</span><span class="n">lambda_</span><span class="p">,</span> <span class="n">tau</span><span class="p">,</span> <span class="n">sigma</span><span class="p">,</span> <span class="n">gamma</span><span class="p">,</span> <span class="n">eta</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">T</span><span class="p">)</span>
+<span class="go">array([571401.15425298, 245666.03148525, 106637.09264631, 48652.34421856, 27643.37739691])</span>
+</pre></div>
+</div>
+<img alt="../../../../_images/trade_list.png" src="../../../../_images/trade_list.png" />
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">cost_expectation</span><span class="p">(</span><span class="n">lambda_</span><span class="p">,</span> <span class="n">tau</span><span class="p">,</span> <span class="n">sigma</span><span class="p">,</span> <span class="n">gamma</span><span class="p">,</span> <span class="n">eta</span><span class="p">,</span> <span class="n">epsilon</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">T</span><span class="p">)</span>
+<span class="go">1140715.1670497851</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">math</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">cost_variance</span><span class="p">(</span><span class="n">lambda_</span><span class="p">,</span> <span class="n">tau</span><span class="p">,</span> <span class="n">sigma</span><span class="p">,</span> <span class="n">gamma</span><span class="p">,</span> <span class="n">eta</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">T</span><span class="p">))</span>
+<span class="go">449367.65254135116</span>
+</pre></div>
+</div>
+<p>I hope you find the almgren_chriss Python package useful and I look forward to hearing your feedback and suggestions.
+Happy trading!</p>
+</section>
+</section>
+
+<div class="section ablog__blog_comments">
+  
+  
+
+
+<div class="section ablog__prev-next">
+  <span class="ablog__prev">
+    
+    
+    Anterior:
+    
+    <a href="../2023-05-18-livro-munk-financial-asset-pricing/index-en.html">
+      
+      <span>Recommendation: Book ‘Financial Asset Pricing Theory’</span>
+    </a>
+    
+  </span>
+  <span class="ablog__spacer">&nbsp;</span>
+  <span class="ablog__next">
+    
+  </span>
+</div>
+
+  
+  
+</div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Bernardo Paulsen.</p>
+  </div>
+
+  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
