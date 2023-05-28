@@ -3,16 +3,54 @@ Open-Source Libraries
 
 Welcome to the open-source projects page!
 
-I believe that open-source projects are a way to contribute to the developer and data science community, allowing others to benefit from and enhance the work we do. Moreover, open-source projects are an excellent way of learning, as they enable us to study, analyze, and collaborate with others on innovative solutions.
+I am a firm believer in the power of open-source projects as a means to contribute to the developer and data science
+community. They allow others to benefit from and build upon the work we do. Moreover, open-source projects are an
+excellent way of learning, as they enable us to study, analyze, and collaborate with others on innovative solutions.
 
-Currently, I have two open-source projects:
+Currently, I have three open-source projects:
 
+- **almgren_chriss**, a Python package implementing the Almgren-Chriss model for optimal execution of portfolio transactions.
 - **log_decor**, which provides logging decorators for functions, classes, and methods in Python.
 - **banco_central_ts**, which provides a function for easily collecting open data from the Central Bank of Brazil.
 
-I am always working on new open-source projects and look forward to sharing them with you as they are developed. Feel free to explore my current project and don't hesitate to contact me if you have any questions or suggestions.
+I am always working on new open-source projects and look forward to sharing them with you as they are developed.
+Feel free to explore my current projects and don't hesitate to contact me if you have any questions or suggestions.
 
 Thank you for visiting my open-source projects page, and I hope you find something useful and interesting here.
+
+almgren_chriss
+--------------
+
+**almgren_chriss** is a Python package that implements the Almgren-Chriss model for optimal execution of portfolio
+transactions. The Almgren-Chriss model is a mathematical model used in financial markets to determine the optimal way
+to execute large orders. It considers factors such as risk tolerance, trading duration, volatility, and permanent and
+temporary market impact.
+
+The package provides functions for calculating the expected cost and variance of the cost of trading,
+the trade decay rate, and the trading trajectory and list of trades.
+These functions can be used to analyze and optimize trading strategies.
+
+Here is an example of how to use the package to calculate the trading trajectory:
+
+.. code-block:: python
+
+    from almgren_chriss import trade_trajectory
+
+    # Risk tolerance, interval between trades, volatility, permanent impact slope, temporary impact slope
+    lambda_, tau, sigma, gamma, eta = 2e-6, 1, 0.95, 2.5e-7, 2.5e-6
+    # Total number of shares, trading duration
+    X, T = 1e06, 5.0
+
+    trajectory = trade_trajectory(lambda_, tau, sigma, gamma, eta, X, T)
+
+.. image:: assets/almgren-chriss-trade_trajectory.png
+
+**almgren_chriss** is available on the official PyPI repository, and the entire source code of the project is
+available on the GitHub repository. Also, the documentation is available on GitHub Pages.
+
+- `almgren_chriss - PyPI <https://pypi.org/project/almgren-chriss/>`_
+- `almgren_chriss - Code <https://github.com/bernardopaulsen/almgren-chriss>`_
+- `almgren_chriss - Documentation <https://bernardopaulsen.github.io/almgren-chriss/>`_
 
 log_decor
 ---------

@@ -1,18 +1,57 @@
-Bibliotecas Open-Source
-=======================
+Bibliotecas de Código Aberto
+============================
 
-Bem-vindo à página de projetos *open-source*! Aqui, compartilho o meu trabalho em projetos *open-source*, que considero de extrema importância para o desenvolvimento de *software* e para a ciência de dados.
+Bem-vindo à página de projetos de código aberto!
 
-Acredito que projetos *open-source* são uma forma de contribuir para a comunidade de desenvolvedores e cientistas de dados, permitindo que outros possam aproveitar e aprimorar o trabalho que realizamos. Além disso, projetos *open-source* são uma excelente forma de aprendizado, pois nos permitem estudar, analisar e colaborar com outras pessoas em soluções inovadoras.
+Eu acredito firmemente no poder dos projetos de código aberto como uma maneira de contribuir para a comunidade de
+desenvolvedores e cientistas de dados. Eles permitem que outros se beneficiem e construam sobre o trabalho que fazemos.
+Além disso, projetos de código aberto são uma excelente maneira de aprender, pois nos permitem estudar, analisar e
+colaborar com outros em soluções inovadoras.
 
-Atualmente, tenho dois projetos *open-source* desenvolvidos inteiramente por mim:
+Atualmente, tenho três projetos de código aberto:
 
-- **log_decor**, que fornece decoradores de *logging* para funções, classes e métodos em Python;
+- **almgren_chriss**, um pacote Python que implementa o modelo Almgren-Chriss para execução ideal de transações de portfólio.
+- **log_decor**, que fornece decoradores de registro para funções, classes e métodos em Python.
 - **banco_central_ts**, que fornece uma função para coletar facilmente dados abertos do Banco Central do Brasil.
 
-Estou sempre trabalhando em novos projetos *open-source*, e estou ansioso para compartilhá-los com você à medida que forem desenvolvidos. Sinta-se à vontade para explorar meu projeto atual e não hesite em entrar em contato comigo se tiver alguma dúvida ou sugestão.
+Estou sempre trabalhando em novos projetos de código aberto e espero compartilhá-los à medida que são desenvolvidos.
+Sinta-se à vontade para explorar meus projetos atuais e não hesite em me contatar se tiver alguma pergunta ou sugestão.
 
-Obrigado por visitar minha página de projetos open-source, e espero que você encontre algo útil e interessante aqui.
+Obrigado por visitar minha página de projetos de código aberto, e espero que você encontre algo útil e interessante aqui.
+
+almgren_chriss
+--------------
+
+**almgren_chriss** é um pacote Python que implementa o modelo Almgren-Chriss para execução ideal de transações de
+portfólio. O modelo Almgren-Chriss é um modelo matemático usado nos mercados financeiros para determinar a maneira
+ideal de executar grandes ordens. Ele considera fatores como tolerância ao risco, duração da negociação, volatilidade
+e impacto permanente e temporário no mercado.
+
+O pacote fornece funções para calcular o custo esperado e a variância do custo de negociação, a taxa de decaimento
+da negociação, a trajetória de negociação e lista de negociações. Essas funções podem ser usadas para analisar e
+otimizar estratégias de negociação.
+
+Aqui está um exemplo de como usar o pacote para calcular a trajetória de negociação:
+
+.. code-block:: python
+
+    from almgren_chriss import trade_trajectory
+
+    # Tolerância ao risco, intervalo entre negociações, volatilidade, inclinação de impacto permanente, inclinação de impacto temporário
+    lambda_, tau, sigma, gamma, eta = 2e-6, 1, 0.95, 2.5e-7, 2.5e-6
+    # Número total de ações, duração da negociação
+    X, T = 1e06, 5.0
+
+    trajectory = trade_trajectory(lambda_, tau, sigma, gamma, eta, X, T)
+
+.. image:: assets/almgren-chriss-trade_trajectory.png
+
+**almgren_chriss** está disponível no repositório oficial PyPI, e todo o código-fonte do projeto está disponível no repositório GitHub. Isso permite que você contribua para o projeto e personalize o pacote para suas necessidades específicas.
+
+- `almgren_chriss - PyPI <https://pypi.org/project/almgren-chriss/>`_
+- `almgren_chriss - Código <https://github.com/bernardopaulsen/almgren-chriss>`_
+- `almgren_chriss - Documentação <https://bernardopaulsen.github.io/almgren-chriss/>`_
+
 
 log_decor
 ---------
