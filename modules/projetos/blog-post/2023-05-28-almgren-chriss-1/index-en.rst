@@ -50,8 +50,8 @@ The package is available on the official PyPI repository, and the entire source 
 available on the GitHub repository. Also, the documentation is available on GitHub Pages.
 
 - `almgren_chriss - PyPI <https://pypi.org/project/almgren-chriss/>`_
-- `almgren_chriss - Code <https://github.com/yourusername/almgren_chriss>`_
-- `almgren_chriss - Documentation <https://yourusername.github.io/almgren_chriss/>`_
+- `almgren_chriss - Code <https://github.com/yourusername/almgren-chriss>`_
+- `almgren_chriss - Documentation <https://yourusername.github.io/almgren-chriss/>`_
 
 Examples
 ========
